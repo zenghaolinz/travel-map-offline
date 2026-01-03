@@ -1,0 +1,6852 @@
+{
+    "东城区": {
+        "coords": [
+            116.418757,
+            39.917544
+        ],
+        "country_code": "cn"
+    },
+    "dongchengqu": {
+        "coords": [
+            116.418757,
+            39.917544
+        ],
+        "country_code": "cn"
+    },
+    "西城区": {
+        "coords": [
+            116.366794,
+            39.915309
+        ],
+        "country_code": "cn"
+    },
+    "xichengqu": {
+        "coords": [
+            116.366794,
+            39.915309
+        ],
+        "country_code": "cn"
+    },
+    "朝阳区": {
+        "coords": [
+            116.486409,
+            39.921489
+        ],
+        "country_code": "cn"
+    },
+    "chaoyangqu": {
+        "coords": [
+            116.486409,
+            39.921489
+        ],
+        "country_code": "cn"
+    },
+    "丰台区": {
+        "coords": [
+            116.286968,
+            39.863642
+        ],
+        "country_code": "cn"
+    },
+    "fengtaiqu": {
+        "coords": [
+            116.286968,
+            39.863642
+        ],
+        "country_code": "cn"
+    },
+    "石景山区": {
+        "coords": [
+            116.195445,
+            39.914601
+        ],
+        "country_code": "cn"
+    },
+    "shijingshanqu": {
+        "coords": [
+            116.195445,
+            39.914601
+        ],
+        "country_code": "cn"
+    },
+    "海淀区": {
+        "coords": [
+            116.310316,
+            39.956074
+        ],
+        "country_code": "cn"
+    },
+    "haidianqu": {
+        "coords": [
+            116.310316,
+            39.956074
+        ],
+        "country_code": "cn"
+    },
+    "门头沟区": {
+        "coords": [
+            116.105381,
+            39.937183
+        ],
+        "country_code": "cn"
+    },
+    "mentougouqu": {
+        "coords": [
+            116.105381,
+            39.937183
+        ],
+        "country_code": "cn"
+    },
+    "房山区": {
+        "coords": [
+            116.139157,
+            39.735535
+        ],
+        "country_code": "cn"
+    },
+    "fangshanqu": {
+        "coords": [
+            116.139157,
+            39.735535
+        ],
+        "country_code": "cn"
+    },
+    "通州区": {
+        "coords": [
+            116.658603,
+            39.902486
+        ],
+        "country_code": "cn"
+    },
+    "tongzhouqu": {
+        "coords": [
+            116.658603,
+            39.902486
+        ],
+        "country_code": "cn"
+    },
+    "顺义区": {
+        "coords": [
+            116.653525,
+            40.128936
+        ],
+        "country_code": "cn"
+    },
+    "shunyiqu": {
+        "coords": [
+            116.653525,
+            40.128936
+        ],
+        "country_code": "cn"
+    },
+    "昌平区": {
+        "coords": [
+            116.235906,
+            40.218085
+        ],
+        "country_code": "cn"
+    },
+    "changpingqu": {
+        "coords": [
+            116.235906,
+            40.218085
+        ],
+        "country_code": "cn"
+    },
+    "大兴区": {
+        "coords": [
+            116.338033,
+            39.728908
+        ],
+        "country_code": "cn"
+    },
+    "daxingqu": {
+        "coords": [
+            116.338033,
+            39.728908
+        ],
+        "country_code": "cn"
+    },
+    "怀柔区": {
+        "coords": [
+            116.637122,
+            40.324272
+        ],
+        "country_code": "cn"
+    },
+    "huairouqu": {
+        "coords": [
+            116.637122,
+            40.324272
+        ],
+        "country_code": "cn"
+    },
+    "平谷区": {
+        "coords": [
+            117.112335,
+            40.144783
+        ],
+        "country_code": "cn"
+    },
+    "pingguqu": {
+        "coords": [
+            117.112335,
+            40.144783
+        ],
+        "country_code": "cn"
+    },
+    "密云区": {
+        "coords": [
+            116.843352,
+            40.377362
+        ],
+        "country_code": "cn"
+    },
+    "miyunqu": {
+        "coords": [
+            116.843352,
+            40.377362
+        ],
+        "country_code": "cn"
+    },
+    "延庆区": {
+        "coords": [
+            115.985006,
+            40.465325
+        ],
+        "country_code": "cn"
+    },
+    "yanqingqu": {
+        "coords": [
+            115.985006,
+            40.465325
+        ],
+        "country_code": "cn"
+    },
+    "和平区": {
+        "coords": [
+            117.195907,
+            39.118327
+        ],
+        "country_code": "cn"
+    },
+    "hepingqu": {
+        "coords": [
+            117.195907,
+            39.118327
+        ],
+        "country_code": "cn"
+    },
+    "河东区": {
+        "coords": [
+            117.226568,
+            39.122125
+        ],
+        "country_code": "cn"
+    },
+    "hedongqu": {
+        "coords": [
+            117.226568,
+            39.122125
+        ],
+        "country_code": "cn"
+    },
+    "河西区": {
+        "coords": [
+            117.217536,
+            39.101897
+        ],
+        "country_code": "cn"
+    },
+    "hexiqu": {
+        "coords": [
+            117.217536,
+            39.101897
+        ],
+        "country_code": "cn"
+    },
+    "南开区": {
+        "coords": [
+            117.164143,
+            39.120474
+        ],
+        "country_code": "cn"
+    },
+    "nankaiqu": {
+        "coords": [
+            117.164143,
+            39.120474
+        ],
+        "country_code": "cn"
+    },
+    "河北区": {
+        "coords": [
+            117.201569,
+            39.156632
+        ],
+        "country_code": "cn"
+    },
+    "hebeiqu": {
+        "coords": [
+            117.201569,
+            39.156632
+        ],
+        "country_code": "cn"
+    },
+    "红桥区": {
+        "coords": [
+            117.163301,
+            39.175066
+        ],
+        "country_code": "cn"
+    },
+    "hongqiaoqu": {
+        "coords": [
+            117.163301,
+            39.175066
+        ],
+        "country_code": "cn"
+    },
+    "东丽区": {
+        "coords": [
+            117.313967,
+            39.087764
+        ],
+        "country_code": "cn"
+    },
+    "dongliqu": {
+        "coords": [
+            117.313967,
+            39.087764
+        ],
+        "country_code": "cn"
+    },
+    "西青区": {
+        "coords": [
+            117.012247,
+            39.139446
+        ],
+        "country_code": "cn"
+    },
+    "xiqingqu": {
+        "coords": [
+            117.012247,
+            39.139446
+        ],
+        "country_code": "cn"
+    },
+    "津南区": {
+        "coords": [
+            117.382549,
+            38.989577
+        ],
+        "country_code": "cn"
+    },
+    "jinnanqu": {
+        "coords": [
+            117.382549,
+            38.989577
+        ],
+        "country_code": "cn"
+    },
+    "北辰区": {
+        "coords": [
+            117.13482,
+            39.225555
+        ],
+        "country_code": "cn"
+    },
+    "beichenqu": {
+        "coords": [
+            117.13482,
+            39.225555
+        ],
+        "country_code": "cn"
+    },
+    "武清区": {
+        "coords": [
+            117.057959,
+            39.376925
+        ],
+        "country_code": "cn"
+    },
+    "wuqingqu": {
+        "coords": [
+            117.057959,
+            39.376925
+        ],
+        "country_code": "cn"
+    },
+    "宝坻区": {
+        "coords": [
+            117.308094,
+            39.716965
+        ],
+        "country_code": "cn"
+    },
+    "baodiqu": {
+        "coords": [
+            117.308094,
+            39.716965
+        ],
+        "country_code": "cn"
+    },
+    "滨海新区": {
+        "coords": [
+            117.654173,
+            39.032846
+        ],
+        "country_code": "cn"
+    },
+    "binhaixinqu": {
+        "coords": [
+            117.654173,
+            39.032846
+        ],
+        "country_code": "cn"
+    },
+    "宁河区": {
+        "coords": [
+            117.82828,
+            39.328886
+        ],
+        "country_code": "cn"
+    },
+    "ninghequ": {
+        "coords": [
+            117.82828,
+            39.328886
+        ],
+        "country_code": "cn"
+    },
+    "静海区": {
+        "coords": [
+            116.925304,
+            38.935671
+        ],
+        "country_code": "cn"
+    },
+    "jinghaiqu": {
+        "coords": [
+            116.925304,
+            38.935671
+        ],
+        "country_code": "cn"
+    },
+    "蓟州区": {
+        "coords": [
+            117.407449,
+            40.045342
+        ],
+        "country_code": "cn"
+    },
+    "jizhouqu": {
+        "coords": [
+            117.407449,
+            40.045342
+        ],
+        "country_code": "cn"
+    },
+    "石家庄市": {
+        "coords": [
+            114.502461,
+            38.045474
+        ],
+        "country_code": "cn"
+    },
+    "shijiazhuangshi": {
+        "coords": [
+            114.502461,
+            38.045474
+        ],
+        "country_code": "cn"
+    },
+    "唐山市": {
+        "coords": [
+            118.175393,
+            39.635113
+        ],
+        "country_code": "cn"
+    },
+    "tangshanshi": {
+        "coords": [
+            118.175393,
+            39.635113
+        ],
+        "country_code": "cn"
+    },
+    "秦皇岛市": {
+        "coords": [
+            119.586579,
+            39.942531
+        ],
+        "country_code": "cn"
+    },
+    "qinhuangdaoshi": {
+        "coords": [
+            119.586579,
+            39.942531
+        ],
+        "country_code": "cn"
+    },
+    "邯郸市": {
+        "coords": [
+            114.490686,
+            36.612273
+        ],
+        "country_code": "cn"
+    },
+    "handanshi": {
+        "coords": [
+            114.490686,
+            36.612273
+        ],
+        "country_code": "cn"
+    },
+    "邢台市": {
+        "coords": [
+            114.508851,
+            37.0682
+        ],
+        "country_code": "cn"
+    },
+    "xingtaishi": {
+        "coords": [
+            114.508851,
+            37.0682
+        ],
+        "country_code": "cn"
+    },
+    "保定市": {
+        "coords": [
+            115.482331,
+            38.867657
+        ],
+        "country_code": "cn"
+    },
+    "baodingshi": {
+        "coords": [
+            115.482331,
+            38.867657
+        ],
+        "country_code": "cn"
+    },
+    "张家口市": {
+        "coords": [
+            114.884091,
+            40.811901
+        ],
+        "country_code": "cn"
+    },
+    "zhangjiakoushi": {
+        "coords": [
+            114.884091,
+            40.811901
+        ],
+        "country_code": "cn"
+    },
+    "承德市": {
+        "coords": [
+            117.939152,
+            40.976204
+        ],
+        "country_code": "cn"
+    },
+    "chengdeshi": {
+        "coords": [
+            117.939152,
+            40.976204
+        ],
+        "country_code": "cn"
+    },
+    "沧州市": {
+        "coords": [
+            116.857461,
+            38.310582
+        ],
+        "country_code": "cn"
+    },
+    "cangzhoushi": {
+        "coords": [
+            116.857461,
+            38.310582
+        ],
+        "country_code": "cn"
+    },
+    "廊坊市": {
+        "coords": [
+            116.704441,
+            39.523927
+        ],
+        "country_code": "cn"
+    },
+    "langfangshi": {
+        "coords": [
+            116.704441,
+            39.523927
+        ],
+        "country_code": "cn"
+    },
+    "衡水市": {
+        "coords": [
+            115.665993,
+            37.735097
+        ],
+        "country_code": "cn"
+    },
+    "hengshuishi": {
+        "coords": [
+            115.665993,
+            37.735097
+        ],
+        "country_code": "cn"
+    },
+    "太原市": {
+        "coords": [
+            112.549248,
+            37.857014
+        ],
+        "country_code": "cn"
+    },
+    "taiyuanshi": {
+        "coords": [
+            112.549248,
+            37.857014
+        ],
+        "country_code": "cn"
+    },
+    "大同市": {
+        "coords": [
+            113.295259,
+            40.09031
+        ],
+        "country_code": "cn"
+    },
+    "datongshi": {
+        "coords": [
+            113.295259,
+            40.09031
+        ],
+        "country_code": "cn"
+    },
+    "阳泉市": {
+        "coords": [
+            113.583285,
+            37.861188
+        ],
+        "country_code": "cn"
+    },
+    "yangquanshi": {
+        "coords": [
+            113.583285,
+            37.861188
+        ],
+        "country_code": "cn"
+    },
+    "长治市": {
+        "coords": [
+            113.113556,
+            36.191112
+        ],
+        "country_code": "cn"
+    },
+    "zhangzhishi": {
+        "coords": [
+            113.113556,
+            36.191112
+        ],
+        "country_code": "cn"
+    },
+    "晋城市": {
+        "coords": [
+            112.851274,
+            35.497553
+        ],
+        "country_code": "cn"
+    },
+    "jinchengshi": {
+        "coords": [
+            112.851274,
+            35.497553
+        ],
+        "country_code": "cn"
+    },
+    "朔州市": {
+        "coords": [
+            112.433387,
+            39.331261
+        ],
+        "country_code": "cn"
+    },
+    "shuozhoushi": {
+        "coords": [
+            112.433387,
+            39.331261
+        ],
+        "country_code": "cn"
+    },
+    "晋中市": {
+        "coords": [
+            112.736465,
+            37.696495
+        ],
+        "country_code": "cn"
+    },
+    "jinzhongshi": {
+        "coords": [
+            112.736465,
+            37.696495
+        ],
+        "country_code": "cn"
+    },
+    "运城市": {
+        "coords": [
+            111.003957,
+            35.022778
+        ],
+        "country_code": "cn"
+    },
+    "yunchengshi": {
+        "coords": [
+            111.003957,
+            35.022778
+        ],
+        "country_code": "cn"
+    },
+    "忻州市": {
+        "coords": [
+            112.733538,
+            38.41769
+        ],
+        "country_code": "cn"
+    },
+    "xinzhoushi": {
+        "coords": [
+            112.733538,
+            38.41769
+        ],
+        "country_code": "cn"
+    },
+    "临汾市": {
+        "coords": [
+            111.517973,
+            36.08415
+        ],
+        "country_code": "cn"
+    },
+    "linfenshi": {
+        "coords": [
+            111.517973,
+            36.08415
+        ],
+        "country_code": "cn"
+    },
+    "吕梁市": {
+        "coords": [
+            111.134335,
+            37.524366
+        ],
+        "country_code": "cn"
+    },
+    "lvliangshi": {
+        "coords": [
+            111.134335,
+            37.524366
+        ],
+        "country_code": "cn"
+    },
+    "呼和浩特市": {
+        "coords": [
+            111.670801,
+            40.818311
+        ],
+        "country_code": "cn"
+    },
+    "huhehaoteshi": {
+        "coords": [
+            111.670801,
+            40.818311
+        ],
+        "country_code": "cn"
+    },
+    "包头市": {
+        "coords": [
+            109.840405,
+            40.658168
+        ],
+        "country_code": "cn"
+    },
+    "baotoushi": {
+        "coords": [
+            109.840405,
+            40.658168
+        ],
+        "country_code": "cn"
+    },
+    "乌海市": {
+        "coords": [
+            106.825563,
+            39.673734
+        ],
+        "country_code": "cn"
+    },
+    "wuhaishi": {
+        "coords": [
+            106.825563,
+            39.673734
+        ],
+        "country_code": "cn"
+    },
+    "赤峰市": {
+        "coords": [
+            118.956806,
+            42.275317
+        ],
+        "country_code": "cn"
+    },
+    "chifengshi": {
+        "coords": [
+            118.956806,
+            42.275317
+        ],
+        "country_code": "cn"
+    },
+    "通辽市": {
+        "coords": [
+            122.263119,
+            43.617429
+        ],
+        "country_code": "cn"
+    },
+    "tongliaoshi": {
+        "coords": [
+            122.263119,
+            43.617429
+        ],
+        "country_code": "cn"
+    },
+    "鄂尔多斯市": {
+        "coords": [
+            109.99029,
+            39.817179
+        ],
+        "country_code": "cn"
+    },
+    "eerduosishi": {
+        "coords": [
+            109.99029,
+            39.817179
+        ],
+        "country_code": "cn"
+    },
+    "呼伦贝尔市": {
+        "coords": [
+            119.758168,
+            49.215333
+        ],
+        "country_code": "cn"
+    },
+    "hulunbeiershi": {
+        "coords": [
+            119.758168,
+            49.215333
+        ],
+        "country_code": "cn"
+    },
+    "巴彦淖尔市": {
+        "coords": [
+            107.416959,
+            40.757402
+        ],
+        "country_code": "cn"
+    },
+    "bayannaoershi": {
+        "coords": [
+            107.416959,
+            40.757402
+        ],
+        "country_code": "cn"
+    },
+    "乌兰察布市": {
+        "coords": [
+            113.114543,
+            41.034126
+        ],
+        "country_code": "cn"
+    },
+    "wulanchabushi": {
+        "coords": [
+            113.114543,
+            41.034126
+        ],
+        "country_code": "cn"
+    },
+    "兴安盟": {
+        "coords": [
+            122.070317,
+            46.076268
+        ],
+        "country_code": "cn"
+    },
+    "xinganmeng": {
+        "coords": [
+            122.070317,
+            46.076268
+        ],
+        "country_code": "cn"
+    },
+    "锡林郭勒盟": {
+        "coords": [
+            116.090996,
+            43.944018
+        ],
+        "country_code": "cn"
+    },
+    "xilinguoleimeng": {
+        "coords": [
+            116.090996,
+            43.944018
+        ],
+        "country_code": "cn"
+    },
+    "阿拉善盟": {
+        "coords": [
+            105.706422,
+            38.844814
+        ],
+        "country_code": "cn"
+    },
+    "alashanmeng": {
+        "coords": [
+            105.706422,
+            38.844814
+        ],
+        "country_code": "cn"
+    },
+    "沈阳市": {
+        "coords": [
+            123.429096,
+            41.796767
+        ],
+        "country_code": "cn"
+    },
+    "shenyangshi": {
+        "coords": [
+            123.429096,
+            41.796767
+        ],
+        "country_code": "cn"
+    },
+    "大连市": {
+        "coords": [
+            121.618622,
+            38.91459
+        ],
+        "country_code": "cn"
+    },
+    "dalianshi": {
+        "coords": [
+            121.618622,
+            38.91459
+        ],
+        "country_code": "cn"
+    },
+    "鞍山市": {
+        "coords": [
+            122.995632,
+            41.110626
+        ],
+        "country_code": "cn"
+    },
+    "anshanshi": {
+        "coords": [
+            122.995632,
+            41.110626
+        ],
+        "country_code": "cn"
+    },
+    "抚顺市": {
+        "coords": [
+            123.921109,
+            41.875956
+        ],
+        "country_code": "cn"
+    },
+    "fushunshi": {
+        "coords": [
+            123.921109,
+            41.875956
+        ],
+        "country_code": "cn"
+    },
+    "本溪市": {
+        "coords": [
+            123.770519,
+            41.297909
+        ],
+        "country_code": "cn"
+    },
+    "benxishi": {
+        "coords": [
+            123.770519,
+            41.297909
+        ],
+        "country_code": "cn"
+    },
+    "丹东市": {
+        "coords": [
+            124.383044,
+            40.124296
+        ],
+        "country_code": "cn"
+    },
+    "dandongshi": {
+        "coords": [
+            124.383044,
+            40.124296
+        ],
+        "country_code": "cn"
+    },
+    "锦州市": {
+        "coords": [
+            121.135742,
+            41.119269
+        ],
+        "country_code": "cn"
+    },
+    "jinzhoushi": {
+        "coords": [
+            121.135742,
+            41.119269
+        ],
+        "country_code": "cn"
+    },
+    "营口市": {
+        "coords": [
+            122.235151,
+            40.667432
+        ],
+        "country_code": "cn"
+    },
+    "yingkoushi": {
+        "coords": [
+            122.235151,
+            40.667432
+        ],
+        "country_code": "cn"
+    },
+    "阜新市": {
+        "coords": [
+            121.648962,
+            42.011796
+        ],
+        "country_code": "cn"
+    },
+    "fuxinshi": {
+        "coords": [
+            121.648962,
+            42.011796
+        ],
+        "country_code": "cn"
+    },
+    "辽阳市": {
+        "coords": [
+            123.18152,
+            41.269402
+        ],
+        "country_code": "cn"
+    },
+    "liaoyangshi": {
+        "coords": [
+            123.18152,
+            41.269402
+        ],
+        "country_code": "cn"
+    },
+    "盘锦市": {
+        "coords": [
+            122.06957,
+            41.124484
+        ],
+        "country_code": "cn"
+    },
+    "panjinshi": {
+        "coords": [
+            122.06957,
+            41.124484
+        ],
+        "country_code": "cn"
+    },
+    "铁岭市": {
+        "coords": [
+            123.844279,
+            42.290585
+        ],
+        "country_code": "cn"
+    },
+    "tielingshi": {
+        "coords": [
+            123.844279,
+            42.290585
+        ],
+        "country_code": "cn"
+    },
+    "朝阳市": {
+        "coords": [
+            120.451176,
+            41.576758
+        ],
+        "country_code": "cn"
+    },
+    "zhaoyangshi": {
+        "coords": [
+            120.451176,
+            41.576758
+        ],
+        "country_code": "cn"
+    },
+    "葫芦岛市": {
+        "coords": [
+            120.856394,
+            40.755572
+        ],
+        "country_code": "cn"
+    },
+    "huludaoshi": {
+        "coords": [
+            120.856394,
+            40.755572
+        ],
+        "country_code": "cn"
+    },
+    "长春市": {
+        "coords": [
+            125.3245,
+            43.886841
+        ],
+        "country_code": "cn"
+    },
+    "changchunshi": {
+        "coords": [
+            125.3245,
+            43.886841
+        ],
+        "country_code": "cn"
+    },
+    "吉林市": {
+        "coords": [
+            126.55302,
+            43.843577
+        ],
+        "country_code": "cn"
+    },
+    "jilinshi": {
+        "coords": [
+            126.55302,
+            43.843577
+        ],
+        "country_code": "cn"
+    },
+    "四平市": {
+        "coords": [
+            124.370785,
+            43.170344
+        ],
+        "country_code": "cn"
+    },
+    "sipingshi": {
+        "coords": [
+            124.370785,
+            43.170344
+        ],
+        "country_code": "cn"
+    },
+    "辽源市": {
+        "coords": [
+            125.145349,
+            42.902692
+        ],
+        "country_code": "cn"
+    },
+    "liaoyuanshi": {
+        "coords": [
+            125.145349,
+            42.902692
+        ],
+        "country_code": "cn"
+    },
+    "通化市": {
+        "coords": [
+            125.936501,
+            41.721177
+        ],
+        "country_code": "cn"
+    },
+    "tonghuashi": {
+        "coords": [
+            125.936501,
+            41.721177
+        ],
+        "country_code": "cn"
+    },
+    "白山市": {
+        "coords": [
+            126.427839,
+            41.942505
+        ],
+        "country_code": "cn"
+    },
+    "baishanshi": {
+        "coords": [
+            126.427839,
+            41.942505
+        ],
+        "country_code": "cn"
+    },
+    "松原市": {
+        "coords": [
+            124.823608,
+            45.118243
+        ],
+        "country_code": "cn"
+    },
+    "songyuanshi": {
+        "coords": [
+            124.823608,
+            45.118243
+        ],
+        "country_code": "cn"
+    },
+    "白城市": {
+        "coords": [
+            122.841114,
+            45.619026
+        ],
+        "country_code": "cn"
+    },
+    "baichengshi": {
+        "coords": [
+            122.841114,
+            45.619026
+        ],
+        "country_code": "cn"
+    },
+    "延边朝鲜族自治州": {
+        "coords": [
+            129.513228,
+            42.904823
+        ],
+        "country_code": "cn"
+    },
+    "yanbianchaoxianzuzizhizhou": {
+        "coords": [
+            129.513228,
+            42.904823
+        ],
+        "country_code": "cn"
+    },
+    "哈尔滨市": {
+        "coords": [
+            126.642464,
+            45.756967
+        ],
+        "country_code": "cn"
+    },
+    "haerbinshi": {
+        "coords": [
+            126.642464,
+            45.756967
+        ],
+        "country_code": "cn"
+    },
+    "齐齐哈尔市": {
+        "coords": [
+            123.95792,
+            47.342081
+        ],
+        "country_code": "cn"
+    },
+    "qiqihaershi": {
+        "coords": [
+            123.95792,
+            47.342081
+        ],
+        "country_code": "cn"
+    },
+    "鸡西市": {
+        "coords": [
+            130.975966,
+            45.300046
+        ],
+        "country_code": "cn"
+    },
+    "jixishi": {
+        "coords": [
+            130.975966,
+            45.300046
+        ],
+        "country_code": "cn"
+    },
+    "鹤岗市": {
+        "coords": [
+            130.277487,
+            47.332085
+        ],
+        "country_code": "cn"
+    },
+    "hegangshi": {
+        "coords": [
+            130.277487,
+            47.332085
+        ],
+        "country_code": "cn"
+    },
+    "双鸭山市": {
+        "coords": [
+            131.157304,
+            46.643442
+        ],
+        "country_code": "cn"
+    },
+    "shuangyashanshi": {
+        "coords": [
+            131.157304,
+            46.643442
+        ],
+        "country_code": "cn"
+    },
+    "大庆市": {
+        "coords": [
+            125.11272,
+            46.590734
+        ],
+        "country_code": "cn"
+    },
+    "daqingshi": {
+        "coords": [
+            125.11272,
+            46.590734
+        ],
+        "country_code": "cn"
+    },
+    "伊春市": {
+        "coords": [
+            128.899396,
+            47.724775
+        ],
+        "country_code": "cn"
+    },
+    "yichunshi": {
+        "coords": [
+            114.391136,
+            27.8043
+        ],
+        "country_code": "cn"
+    },
+    "佳木斯市": {
+        "coords": [
+            130.361634,
+            46.809606
+        ],
+        "country_code": "cn"
+    },
+    "jiamusishi": {
+        "coords": [
+            130.361634,
+            46.809606
+        ],
+        "country_code": "cn"
+    },
+    "七台河市": {
+        "coords": [
+            131.015584,
+            45.771266
+        ],
+        "country_code": "cn"
+    },
+    "qitaiheshi": {
+        "coords": [
+            131.015584,
+            45.771266
+        ],
+        "country_code": "cn"
+    },
+    "牡丹江市": {
+        "coords": [
+            129.618602,
+            44.582962
+        ],
+        "country_code": "cn"
+    },
+    "mudanjiangshi": {
+        "coords": [
+            129.618602,
+            44.582962
+        ],
+        "country_code": "cn"
+    },
+    "黑河市": {
+        "coords": [
+            127.499023,
+            50.249585
+        ],
+        "country_code": "cn"
+    },
+    "heiheshi": {
+        "coords": [
+            127.499023,
+            50.249585
+        ],
+        "country_code": "cn"
+    },
+    "绥化市": {
+        "coords": [
+            126.99293,
+            46.637393
+        ],
+        "country_code": "cn"
+    },
+    "suihuashi": {
+        "coords": [
+            126.99293,
+            46.637393
+        ],
+        "country_code": "cn"
+    },
+    "大兴安岭地区": {
+        "coords": [
+            124.711526,
+            52.335262
+        ],
+        "country_code": "cn"
+    },
+    "daxinganlingdiqu": {
+        "coords": [
+            124.711526,
+            52.335262
+        ],
+        "country_code": "cn"
+    },
+    "黄浦区": {
+        "coords": [
+            121.490317,
+            31.222771
+        ],
+        "country_code": "cn"
+    },
+    "huangpuqu": {
+        "coords": [
+            121.490317,
+            31.222771
+        ],
+        "country_code": "cn"
+    },
+    "徐汇区": {
+        "coords": [
+            121.43752,
+            31.179973
+        ],
+        "country_code": "cn"
+    },
+    "xuhuiqu": {
+        "coords": [
+            121.43752,
+            31.179973
+        ],
+        "country_code": "cn"
+    },
+    "长宁区": {
+        "coords": [
+            121.4222,
+            31.218123
+        ],
+        "country_code": "cn"
+    },
+    "zhangningqu": {
+        "coords": [
+            121.4222,
+            31.218123
+        ],
+        "country_code": "cn"
+    },
+    "静安区": {
+        "coords": [
+            121.448224,
+            31.229003
+        ],
+        "country_code": "cn"
+    },
+    "jinganqu": {
+        "coords": [
+            121.448224,
+            31.229003
+        ],
+        "country_code": "cn"
+    },
+    "普陀区": {
+        "coords": [
+            121.392499,
+            31.241701
+        ],
+        "country_code": "cn"
+    },
+    "putuoqu": {
+        "coords": [
+            121.392499,
+            31.241701
+        ],
+        "country_code": "cn"
+    },
+    "虹口区": {
+        "coords": [
+            121.491832,
+            31.26097
+        ],
+        "country_code": "cn"
+    },
+    "hongkouqu": {
+        "coords": [
+            121.491832,
+            31.26097
+        ],
+        "country_code": "cn"
+    },
+    "杨浦区": {
+        "coords": [
+            121.522797,
+            31.270755
+        ],
+        "country_code": "cn"
+    },
+    "yangpuqu": {
+        "coords": [
+            121.522797,
+            31.270755
+        ],
+        "country_code": "cn"
+    },
+    "闵行区": {
+        "coords": [
+            121.375972,
+            31.111658
+        ],
+        "country_code": "cn"
+    },
+    "minxingqu": {
+        "coords": [
+            121.375972,
+            31.111658
+        ],
+        "country_code": "cn"
+    },
+    "宝山区": {
+        "coords": [
+            121.489934,
+            31.398896
+        ],
+        "country_code": "cn"
+    },
+    "baoshanqu": {
+        "coords": [
+            121.489934,
+            31.398896
+        ],
+        "country_code": "cn"
+    },
+    "嘉定区": {
+        "coords": [
+            121.250333,
+            31.383524
+        ],
+        "country_code": "cn"
+    },
+    "jiadingqu": {
+        "coords": [
+            121.250333,
+            31.383524
+        ],
+        "country_code": "cn"
+    },
+    "浦东新区": {
+        "coords": [
+            121.567706,
+            31.245944
+        ],
+        "country_code": "cn"
+    },
+    "pudongxinqu": {
+        "coords": [
+            121.567706,
+            31.245944
+        ],
+        "country_code": "cn"
+    },
+    "金山区": {
+        "coords": [
+            121.330736,
+            30.724697
+        ],
+        "country_code": "cn"
+    },
+    "jinshanqu": {
+        "coords": [
+            121.330736,
+            30.724697
+        ],
+        "country_code": "cn"
+    },
+    "松江区": {
+        "coords": [
+            121.223543,
+            31.03047
+        ],
+        "country_code": "cn"
+    },
+    "songjiangqu": {
+        "coords": [
+            121.223543,
+            31.03047
+        ],
+        "country_code": "cn"
+    },
+    "青浦区": {
+        "coords": [
+            121.113021,
+            31.151209
+        ],
+        "country_code": "cn"
+    },
+    "qingpuqu": {
+        "coords": [
+            121.113021,
+            31.151209
+        ],
+        "country_code": "cn"
+    },
+    "奉贤区": {
+        "coords": [
+            121.458472,
+            30.912345
+        ],
+        "country_code": "cn"
+    },
+    "fengxianqu": {
+        "coords": [
+            121.458472,
+            30.912345
+        ],
+        "country_code": "cn"
+    },
+    "崇明区": {
+        "coords": [
+            121.397516,
+            31.626946
+        ],
+        "country_code": "cn"
+    },
+    "chongmingqu": {
+        "coords": [
+            121.397516,
+            31.626946
+        ],
+        "country_code": "cn"
+    },
+    "南京市": {
+        "coords": [
+            118.767413,
+            32.041544
+        ],
+        "country_code": "cn"
+    },
+    "nanjingshi": {
+        "coords": [
+            118.767413,
+            32.041544
+        ],
+        "country_code": "cn"
+    },
+    "无锡市": {
+        "coords": [
+            120.301663,
+            31.574729
+        ],
+        "country_code": "cn"
+    },
+    "wuxishi": {
+        "coords": [
+            120.301663,
+            31.574729
+        ],
+        "country_code": "cn"
+    },
+    "徐州市": {
+        "coords": [
+            117.184811,
+            34.261792
+        ],
+        "country_code": "cn"
+    },
+    "xuzhoushi": {
+        "coords": [
+            117.184811,
+            34.261792
+        ],
+        "country_code": "cn"
+    },
+    "常州市": {
+        "coords": [
+            119.946973,
+            31.772752
+        ],
+        "country_code": "cn"
+    },
+    "changzhoushi": {
+        "coords": [
+            119.946973,
+            31.772752
+        ],
+        "country_code": "cn"
+    },
+    "苏州市": {
+        "coords": [
+            120.619585,
+            31.299379
+        ],
+        "country_code": "cn"
+    },
+    "suzhoushi": {
+        "coords": [
+            116.984084,
+            33.633891
+        ],
+        "country_code": "cn"
+    },
+    "南通市": {
+        "coords": [
+            120.864608,
+            32.016212
+        ],
+        "country_code": "cn"
+    },
+    "nantongshi": {
+        "coords": [
+            120.864608,
+            32.016212
+        ],
+        "country_code": "cn"
+    },
+    "连云港市": {
+        "coords": [
+            119.178821,
+            34.600018
+        ],
+        "country_code": "cn"
+    },
+    "lianyungangshi": {
+        "coords": [
+            119.178821,
+            34.600018
+        ],
+        "country_code": "cn"
+    },
+    "淮安市": {
+        "coords": [
+            119.021265,
+            33.597506
+        ],
+        "country_code": "cn"
+    },
+    "huaianshi": {
+        "coords": [
+            119.021265,
+            33.597506
+        ],
+        "country_code": "cn"
+    },
+    "盐城市": {
+        "coords": [
+            120.139998,
+            33.377631
+        ],
+        "country_code": "cn"
+    },
+    "yanchengshi": {
+        "coords": [
+            120.139998,
+            33.377631
+        ],
+        "country_code": "cn"
+    },
+    "扬州市": {
+        "coords": [
+            119.421003,
+            32.393159
+        ],
+        "country_code": "cn"
+    },
+    "yangzhoushi": {
+        "coords": [
+            119.421003,
+            32.393159
+        ],
+        "country_code": "cn"
+    },
+    "镇江市": {
+        "coords": [
+            119.452753,
+            32.204402
+        ],
+        "country_code": "cn"
+    },
+    "zhenjiangshi": {
+        "coords": [
+            119.452753,
+            32.204402
+        ],
+        "country_code": "cn"
+    },
+    "泰州市": {
+        "coords": [
+            119.915176,
+            32.484882
+        ],
+        "country_code": "cn"
+    },
+    "taizhoushi": {
+        "coords": [
+            121.428599,
+            28.661378
+        ],
+        "country_code": "cn"
+    },
+    "宿迁市": {
+        "coords": [
+            118.275162,
+            33.963008
+        ],
+        "country_code": "cn"
+    },
+    "suqianshi": {
+        "coords": [
+            118.275162,
+            33.963008
+        ],
+        "country_code": "cn"
+    },
+    "杭州市": {
+        "coords": [
+            120.153576,
+            30.287459
+        ],
+        "country_code": "cn"
+    },
+    "hangzhoushi": {
+        "coords": [
+            120.153576,
+            30.287459
+        ],
+        "country_code": "cn"
+    },
+    "宁波市": {
+        "coords": [
+            121.549792,
+            29.868388
+        ],
+        "country_code": "cn"
+    },
+    "ningboshi": {
+        "coords": [
+            121.549792,
+            29.868388
+        ],
+        "country_code": "cn"
+    },
+    "温州市": {
+        "coords": [
+            120.672111,
+            28.000575
+        ],
+        "country_code": "cn"
+    },
+    "wenzhoushi": {
+        "coords": [
+            120.672111,
+            28.000575
+        ],
+        "country_code": "cn"
+    },
+    "嘉兴市": {
+        "coords": [
+            120.750865,
+            30.762653
+        ],
+        "country_code": "cn"
+    },
+    "jiaxingshi": {
+        "coords": [
+            120.750865,
+            30.762653
+        ],
+        "country_code": "cn"
+    },
+    "湖州市": {
+        "coords": [
+            120.102398,
+            30.867198
+        ],
+        "country_code": "cn"
+    },
+    "huzhoushi": {
+        "coords": [
+            120.102398,
+            30.867198
+        ],
+        "country_code": "cn"
+    },
+    "绍兴市": {
+        "coords": [
+            120.582112,
+            29.997117
+        ],
+        "country_code": "cn"
+    },
+    "shaoxingshi": {
+        "coords": [
+            120.582112,
+            29.997117
+        ],
+        "country_code": "cn"
+    },
+    "金华市": {
+        "coords": [
+            119.649506,
+            29.089524
+        ],
+        "country_code": "cn"
+    },
+    "jinhuashi": {
+        "coords": [
+            119.649506,
+            29.089524
+        ],
+        "country_code": "cn"
+    },
+    "衢州市": {
+        "coords": [
+            118.87263,
+            28.941708
+        ],
+        "country_code": "cn"
+    },
+    "quzhoushi": {
+        "coords": [
+            118.87263,
+            28.941708
+        ],
+        "country_code": "cn"
+    },
+    "舟山市": {
+        "coords": [
+            122.106863,
+            30.016028
+        ],
+        "country_code": "cn"
+    },
+    "zhoushanshi": {
+        "coords": [
+            122.106863,
+            30.016028
+        ],
+        "country_code": "cn"
+    },
+    "台州市": {
+        "coords": [
+            121.428599,
+            28.661378
+        ],
+        "country_code": "cn"
+    },
+    "丽水市": {
+        "coords": [
+            119.921786,
+            28.451993
+        ],
+        "country_code": "cn"
+    },
+    "lishuishi": {
+        "coords": [
+            119.921786,
+            28.451993
+        ],
+        "country_code": "cn"
+    },
+    "合肥市": {
+        "coords": [
+            117.283042,
+            31.86119
+        ],
+        "country_code": "cn"
+    },
+    "hefeishi": {
+        "coords": [
+            117.283042,
+            31.86119
+        ],
+        "country_code": "cn"
+    },
+    "芜湖市": {
+        "coords": [
+            118.376451,
+            31.326319
+        ],
+        "country_code": "cn"
+    },
+    "wuhushi": {
+        "coords": [
+            118.376451,
+            31.326319
+        ],
+        "country_code": "cn"
+    },
+    "蚌埠市": {
+        "coords": [
+            117.363228,
+            32.939667
+        ],
+        "country_code": "cn"
+    },
+    "bengbushi": {
+        "coords": [
+            117.363228,
+            32.939667
+        ],
+        "country_code": "cn"
+    },
+    "淮南市": {
+        "coords": [
+            117.018329,
+            32.647574
+        ],
+        "country_code": "cn"
+    },
+    "huainanshi": {
+        "coords": [
+            117.018329,
+            32.647574
+        ],
+        "country_code": "cn"
+    },
+    "马鞍山市": {
+        "coords": [
+            118.507906,
+            31.689362
+        ],
+        "country_code": "cn"
+    },
+    "maanshanshi": {
+        "coords": [
+            118.507906,
+            31.689362
+        ],
+        "country_code": "cn"
+    },
+    "淮北市": {
+        "coords": [
+            116.794664,
+            33.971707
+        ],
+        "country_code": "cn"
+    },
+    "huaibeishi": {
+        "coords": [
+            116.794664,
+            33.971707
+        ],
+        "country_code": "cn"
+    },
+    "铜陵市": {
+        "coords": [
+            117.816576,
+            30.929935
+        ],
+        "country_code": "cn"
+    },
+    "tonglingshi": {
+        "coords": [
+            117.816576,
+            30.929935
+        ],
+        "country_code": "cn"
+    },
+    "安庆市": {
+        "coords": [
+            117.043551,
+            30.50883
+        ],
+        "country_code": "cn"
+    },
+    "anqingshi": {
+        "coords": [
+            117.043551,
+            30.50883
+        ],
+        "country_code": "cn"
+    },
+    "黄山市": {
+        "coords": [
+            118.317325,
+            29.709239
+        ],
+        "country_code": "cn"
+    },
+    "huangshanshi": {
+        "coords": [
+            118.317325,
+            29.709239
+        ],
+        "country_code": "cn"
+    },
+    "滁州市": {
+        "coords": [
+            118.316264,
+            32.303627
+        ],
+        "country_code": "cn"
+    },
+    "chuzhoushi": {
+        "coords": [
+            118.316264,
+            32.303627
+        ],
+        "country_code": "cn"
+    },
+    "阜阳市": {
+        "coords": [
+            115.819729,
+            32.896969
+        ],
+        "country_code": "cn"
+    },
+    "fuyangshi": {
+        "coords": [
+            115.819729,
+            32.896969
+        ],
+        "country_code": "cn"
+    },
+    "宿州市": {
+        "coords": [
+            116.984084,
+            33.633891
+        ],
+        "country_code": "cn"
+    },
+    "六安市": {
+        "coords": [
+            116.507676,
+            31.752889
+        ],
+        "country_code": "cn"
+    },
+    "luanshi": {
+        "coords": [
+            116.507676,
+            31.752889
+        ],
+        "country_code": "cn"
+    },
+    "亳州市": {
+        "coords": [
+            115.782939,
+            33.869338
+        ],
+        "country_code": "cn"
+    },
+    "bozhoushi": {
+        "coords": [
+            115.782939,
+            33.869338
+        ],
+        "country_code": "cn"
+    },
+    "池州市": {
+        "coords": [
+            117.489157,
+            30.656037
+        ],
+        "country_code": "cn"
+    },
+    "chizhoushi": {
+        "coords": [
+            117.489157,
+            30.656037
+        ],
+        "country_code": "cn"
+    },
+    "宣城市": {
+        "coords": [
+            118.757995,
+            30.945667
+        ],
+        "country_code": "cn"
+    },
+    "xuanchengshi": {
+        "coords": [
+            118.757995,
+            30.945667
+        ],
+        "country_code": "cn"
+    },
+    "福州市": {
+        "coords": [
+            119.306239,
+            26.075302
+        ],
+        "country_code": "cn"
+    },
+    "fuzhoushi": {
+        "coords": [
+            116.358351,
+            27.98385
+        ],
+        "country_code": "cn"
+    },
+    "厦门市": {
+        "coords": [
+            118.11022,
+            24.490474
+        ],
+        "country_code": "cn"
+    },
+    "xiamenshi": {
+        "coords": [
+            118.11022,
+            24.490474
+        ],
+        "country_code": "cn"
+    },
+    "莆田市": {
+        "coords": [
+            119.007558,
+            25.431011
+        ],
+        "country_code": "cn"
+    },
+    "putianshi": {
+        "coords": [
+            119.007558,
+            25.431011
+        ],
+        "country_code": "cn"
+    },
+    "三明市": {
+        "coords": [
+            117.635001,
+            26.265444
+        ],
+        "country_code": "cn"
+    },
+    "sanmingshi": {
+        "coords": [
+            117.635001,
+            26.265444
+        ],
+        "country_code": "cn"
+    },
+    "泉州市": {
+        "coords": [
+            118.589421,
+            24.908853
+        ],
+        "country_code": "cn"
+    },
+    "quanzhoushi": {
+        "coords": [
+            118.589421,
+            24.908853
+        ],
+        "country_code": "cn"
+    },
+    "漳州市": {
+        "coords": [
+            117.661801,
+            24.510897
+        ],
+        "country_code": "cn"
+    },
+    "zhangzhoushi": {
+        "coords": [
+            117.661801,
+            24.510897
+        ],
+        "country_code": "cn"
+    },
+    "南平市": {
+        "coords": [
+            118.178459,
+            26.635627
+        ],
+        "country_code": "cn"
+    },
+    "nanpingshi": {
+        "coords": [
+            118.178459,
+            26.635627
+        ],
+        "country_code": "cn"
+    },
+    "龙岩市": {
+        "coords": [
+            117.02978,
+            25.091603
+        ],
+        "country_code": "cn"
+    },
+    "longyanshi": {
+        "coords": [
+            117.02978,
+            25.091603
+        ],
+        "country_code": "cn"
+    },
+    "宁德市": {
+        "coords": [
+            119.527082,
+            26.65924
+        ],
+        "country_code": "cn"
+    },
+    "ningdeshi": {
+        "coords": [
+            119.527082,
+            26.65924
+        ],
+        "country_code": "cn"
+    },
+    "南昌市": {
+        "coords": [
+            115.892151,
+            28.676493
+        ],
+        "country_code": "cn"
+    },
+    "nanchangshi": {
+        "coords": [
+            115.892151,
+            28.676493
+        ],
+        "country_code": "cn"
+    },
+    "景德镇市": {
+        "coords": [
+            117.214664,
+            29.29256
+        ],
+        "country_code": "cn"
+    },
+    "jingdezhenshi": {
+        "coords": [
+            117.214664,
+            29.29256
+        ],
+        "country_code": "cn"
+    },
+    "萍乡市": {
+        "coords": [
+            113.852186,
+            27.622946
+        ],
+        "country_code": "cn"
+    },
+    "pingxiangshi": {
+        "coords": [
+            113.852186,
+            27.622946
+        ],
+        "country_code": "cn"
+    },
+    "九江市": {
+        "coords": [
+            115.992811,
+            29.712034
+        ],
+        "country_code": "cn"
+    },
+    "jiujiangshi": {
+        "coords": [
+            115.992811,
+            29.712034
+        ],
+        "country_code": "cn"
+    },
+    "新余市": {
+        "coords": [
+            114.930835,
+            27.810834
+        ],
+        "country_code": "cn"
+    },
+    "xinyushi": {
+        "coords": [
+            114.930835,
+            27.810834
+        ],
+        "country_code": "cn"
+    },
+    "鹰潭市": {
+        "coords": [
+            117.033838,
+            28.238638
+        ],
+        "country_code": "cn"
+    },
+    "yingtanshi": {
+        "coords": [
+            117.033838,
+            28.238638
+        ],
+        "country_code": "cn"
+    },
+    "赣州市": {
+        "coords": [
+            114.940278,
+            25.85097
+        ],
+        "country_code": "cn"
+    },
+    "ganzhoushi": {
+        "coords": [
+            114.940278,
+            25.85097
+        ],
+        "country_code": "cn"
+    },
+    "吉安市": {
+        "coords": [
+            114.986373,
+            27.111699
+        ],
+        "country_code": "cn"
+    },
+    "jianshi": {
+        "coords": [
+            114.986373,
+            27.111699
+        ],
+        "country_code": "cn"
+    },
+    "宜春市": {
+        "coords": [
+            114.391136,
+            27.8043
+        ],
+        "country_code": "cn"
+    },
+    "抚州市": {
+        "coords": [
+            116.358351,
+            27.98385
+        ],
+        "country_code": "cn"
+    },
+    "上饶市": {
+        "coords": [
+            117.971185,
+            28.44442
+        ],
+        "country_code": "cn"
+    },
+    "shangraoshi": {
+        "coords": [
+            117.971185,
+            28.44442
+        ],
+        "country_code": "cn"
+    },
+    "济南市": {
+        "coords": [
+            117.000923,
+            36.675807
+        ],
+        "country_code": "cn"
+    },
+    "jinanshi": {
+        "coords": [
+            117.000923,
+            36.675807
+        ],
+        "country_code": "cn"
+    },
+    "青岛市": {
+        "coords": [
+            120.355173,
+            36.082982
+        ],
+        "country_code": "cn"
+    },
+    "qingdaoshi": {
+        "coords": [
+            120.355173,
+            36.082982
+        ],
+        "country_code": "cn"
+    },
+    "淄博市": {
+        "coords": [
+            118.047648,
+            36.814939
+        ],
+        "country_code": "cn"
+    },
+    "ziboshi": {
+        "coords": [
+            118.047648,
+            36.814939
+        ],
+        "country_code": "cn"
+    },
+    "枣庄市": {
+        "coords": [
+            117.557964,
+            34.856424
+        ],
+        "country_code": "cn"
+    },
+    "zaozhuangshi": {
+        "coords": [
+            117.557964,
+            34.856424
+        ],
+        "country_code": "cn"
+    },
+    "东营市": {
+        "coords": [
+            118.66471,
+            37.434564
+        ],
+        "country_code": "cn"
+    },
+    "dongyingshi": {
+        "coords": [
+            118.66471,
+            37.434564
+        ],
+        "country_code": "cn"
+    },
+    "烟台市": {
+        "coords": [
+            121.391382,
+            37.539297
+        ],
+        "country_code": "cn"
+    },
+    "yantaishi": {
+        "coords": [
+            121.391382,
+            37.539297
+        ],
+        "country_code": "cn"
+    },
+    "潍坊市": {
+        "coords": [
+            119.107078,
+            36.70925
+        ],
+        "country_code": "cn"
+    },
+    "weifangshi": {
+        "coords": [
+            119.107078,
+            36.70925
+        ],
+        "country_code": "cn"
+    },
+    "济宁市": {
+        "coords": [
+            116.587245,
+            35.415393
+        ],
+        "country_code": "cn"
+    },
+    "jiningshi": {
+        "coords": [
+            116.587245,
+            35.415393
+        ],
+        "country_code": "cn"
+    },
+    "泰安市": {
+        "coords": [
+            117.129063,
+            36.194968
+        ],
+        "country_code": "cn"
+    },
+    "taianshi": {
+        "coords": [
+            117.129063,
+            36.194968
+        ],
+        "country_code": "cn"
+    },
+    "威海市": {
+        "coords": [
+            122.116394,
+            37.509691
+        ],
+        "country_code": "cn"
+    },
+    "weihaishi": {
+        "coords": [
+            122.116394,
+            37.509691
+        ],
+        "country_code": "cn"
+    },
+    "日照市": {
+        "coords": [
+            119.461208,
+            35.428588
+        ],
+        "country_code": "cn"
+    },
+    "rizhaoshi": {
+        "coords": [
+            119.461208,
+            35.428588
+        ],
+        "country_code": "cn"
+    },
+    "临沂市": {
+        "coords": [
+            118.326443,
+            35.065282
+        ],
+        "country_code": "cn"
+    },
+    "linyishi": {
+        "coords": [
+            118.326443,
+            35.065282
+        ],
+        "country_code": "cn"
+    },
+    "德州市": {
+        "coords": [
+            116.307428,
+            37.453968
+        ],
+        "country_code": "cn"
+    },
+    "dezhoushi": {
+        "coords": [
+            116.307428,
+            37.453968
+        ],
+        "country_code": "cn"
+    },
+    "聊城市": {
+        "coords": [
+            115.980367,
+            36.456013
+        ],
+        "country_code": "cn"
+    },
+    "liaochengshi": {
+        "coords": [
+            115.980367,
+            36.456013
+        ],
+        "country_code": "cn"
+    },
+    "滨州市": {
+        "coords": [
+            118.016974,
+            37.383542
+        ],
+        "country_code": "cn"
+    },
+    "binzhoushi": {
+        "coords": [
+            118.016974,
+            37.383542
+        ],
+        "country_code": "cn"
+    },
+    "菏泽市": {
+        "coords": [
+            115.469381,
+            35.246531
+        ],
+        "country_code": "cn"
+    },
+    "hezeshi": {
+        "coords": [
+            115.469381,
+            35.246531
+        ],
+        "country_code": "cn"
+    },
+    "郑州市": {
+        "coords": [
+            113.665412,
+            34.757975
+        ],
+        "country_code": "cn"
+    },
+    "zhengzhoushi": {
+        "coords": [
+            113.665412,
+            34.757975
+        ],
+        "country_code": "cn"
+    },
+    "开封市": {
+        "coords": [
+            114.341447,
+            34.797049
+        ],
+        "country_code": "cn"
+    },
+    "kaifengshi": {
+        "coords": [
+            114.341447,
+            34.797049
+        ],
+        "country_code": "cn"
+    },
+    "洛阳市": {
+        "coords": [
+            112.434468,
+            34.663041
+        ],
+        "country_code": "cn"
+    },
+    "luoyangshi": {
+        "coords": [
+            112.434468,
+            34.663041
+        ],
+        "country_code": "cn"
+    },
+    "平顶山市": {
+        "coords": [
+            113.307718,
+            33.735241
+        ],
+        "country_code": "cn"
+    },
+    "pingdingshanshi": {
+        "coords": [
+            113.307718,
+            33.735241
+        ],
+        "country_code": "cn"
+    },
+    "安阳市": {
+        "coords": [
+            114.352482,
+            36.103442
+        ],
+        "country_code": "cn"
+    },
+    "anyangshi": {
+        "coords": [
+            114.352482,
+            36.103442
+        ],
+        "country_code": "cn"
+    },
+    "鹤壁市": {
+        "coords": [
+            114.295444,
+            35.748236
+        ],
+        "country_code": "cn"
+    },
+    "hebishi": {
+        "coords": [
+            114.295444,
+            35.748236
+        ],
+        "country_code": "cn"
+    },
+    "新乡市": {
+        "coords": [
+            113.883991,
+            35.302616
+        ],
+        "country_code": "cn"
+    },
+    "xinxiangshi": {
+        "coords": [
+            113.883991,
+            35.302616
+        ],
+        "country_code": "cn"
+    },
+    "焦作市": {
+        "coords": [
+            113.238266,
+            35.23904
+        ],
+        "country_code": "cn"
+    },
+    "jiaozuoshi": {
+        "coords": [
+            113.238266,
+            35.23904
+        ],
+        "country_code": "cn"
+    },
+    "濮阳市": {
+        "coords": [
+            115.041299,
+            35.768234
+        ],
+        "country_code": "cn"
+    },
+    "puyangshi": {
+        "coords": [
+            115.041299,
+            35.768234
+        ],
+        "country_code": "cn"
+    },
+    "许昌市": {
+        "coords": [
+            113.826063,
+            34.022956
+        ],
+        "country_code": "cn"
+    },
+    "xuchangshi": {
+        "coords": [
+            113.826063,
+            34.022956
+        ],
+        "country_code": "cn"
+    },
+    "漯河市": {
+        "coords": [
+            114.026405,
+            33.575855
+        ],
+        "country_code": "cn"
+    },
+    "taheshi": {
+        "coords": [
+            114.026405,
+            33.575855
+        ],
+        "country_code": "cn"
+    },
+    "三门峡市": {
+        "coords": [
+            111.194099,
+            34.777338
+        ],
+        "country_code": "cn"
+    },
+    "sanmenxiashi": {
+        "coords": [
+            111.194099,
+            34.777338
+        ],
+        "country_code": "cn"
+    },
+    "南阳市": {
+        "coords": [
+            112.540918,
+            32.999082
+        ],
+        "country_code": "cn"
+    },
+    "nanyangshi": {
+        "coords": [
+            112.540918,
+            32.999082
+        ],
+        "country_code": "cn"
+    },
+    "商丘市": {
+        "coords": [
+            115.650497,
+            34.437054
+        ],
+        "country_code": "cn"
+    },
+    "shangqiushi": {
+        "coords": [
+            115.650497,
+            34.437054
+        ],
+        "country_code": "cn"
+    },
+    "信阳市": {
+        "coords": [
+            114.075031,
+            32.123274
+        ],
+        "country_code": "cn"
+    },
+    "xinyangshi": {
+        "coords": [
+            114.075031,
+            32.123274
+        ],
+        "country_code": "cn"
+    },
+    "周口市": {
+        "coords": [
+            114.649653,
+            33.620357
+        ],
+        "country_code": "cn"
+    },
+    "zhoukoushi": {
+        "coords": [
+            114.649653,
+            33.620357
+        ],
+        "country_code": "cn"
+    },
+    "驻马店市": {
+        "coords": [
+            114.024736,
+            32.980169
+        ],
+        "country_code": "cn"
+    },
+    "zhumadianshi": {
+        "coords": [
+            114.024736,
+            32.980169
+        ],
+        "country_code": "cn"
+    },
+    "济源市": {
+        "coords": [
+            112.590047,
+            35.090378
+        ],
+        "country_code": "cn"
+    },
+    "jiyuanshi": {
+        "coords": [
+            112.590047,
+            35.090378
+        ],
+        "country_code": "cn"
+    },
+    "武汉市": {
+        "coords": [
+            114.298572,
+            30.584355
+        ],
+        "country_code": "cn"
+    },
+    "wuhanshi": {
+        "coords": [
+            114.298572,
+            30.584355
+        ],
+        "country_code": "cn"
+    },
+    "黄石市": {
+        "coords": [
+            115.077048,
+            30.220074
+        ],
+        "country_code": "cn"
+    },
+    "huangshishi": {
+        "coords": [
+            115.077048,
+            30.220074
+        ],
+        "country_code": "cn"
+    },
+    "十堰市": {
+        "coords": [
+            110.787916,
+            32.646907
+        ],
+        "country_code": "cn"
+    },
+    "shiyanshi": {
+        "coords": [
+            110.787916,
+            32.646907
+        ],
+        "country_code": "cn"
+    },
+    "宜昌市": {
+        "coords": [
+            111.290843,
+            30.702636
+        ],
+        "country_code": "cn"
+    },
+    "yichangshi": {
+        "coords": [
+            111.290843,
+            30.702636
+        ],
+        "country_code": "cn"
+    },
+    "襄阳市": {
+        "coords": [
+            112.144146,
+            32.042426
+        ],
+        "country_code": "cn"
+    },
+    "xiangyangshi": {
+        "coords": [
+            112.144146,
+            32.042426
+        ],
+        "country_code": "cn"
+    },
+    "鄂州市": {
+        "coords": [
+            114.890593,
+            30.396536
+        ],
+        "country_code": "cn"
+    },
+    "ezhoushi": {
+        "coords": [
+            114.890593,
+            30.396536
+        ],
+        "country_code": "cn"
+    },
+    "荆门市": {
+        "coords": [
+            112.204251,
+            31.03542
+        ],
+        "country_code": "cn"
+    },
+    "jingmenshi": {
+        "coords": [
+            112.204251,
+            31.03542
+        ],
+        "country_code": "cn"
+    },
+    "孝感市": {
+        "coords": [
+            113.926655,
+            30.926423
+        ],
+        "country_code": "cn"
+    },
+    "xiaoganshi": {
+        "coords": [
+            113.926655,
+            30.926423
+        ],
+        "country_code": "cn"
+    },
+    "荆州市": {
+        "coords": [
+            112.23813,
+            30.326857
+        ],
+        "country_code": "cn"
+    },
+    "jingzhoushi": {
+        "coords": [
+            112.23813,
+            30.326857
+        ],
+        "country_code": "cn"
+    },
+    "黄冈市": {
+        "coords": [
+            114.879365,
+            30.447711
+        ],
+        "country_code": "cn"
+    },
+    "huanggangshi": {
+        "coords": [
+            114.879365,
+            30.447711
+        ],
+        "country_code": "cn"
+    },
+    "咸宁市": {
+        "coords": [
+            114.328963,
+            29.832798
+        ],
+        "country_code": "cn"
+    },
+    "xianningshi": {
+        "coords": [
+            114.328963,
+            29.832798
+        ],
+        "country_code": "cn"
+    },
+    "随州市": {
+        "coords": [
+            113.37377,
+            31.717497
+        ],
+        "country_code": "cn"
+    },
+    "suizhoushi": {
+        "coords": [
+            113.37377,
+            31.717497
+        ],
+        "country_code": "cn"
+    },
+    "恩施土家族苗族自治州": {
+        "coords": [
+            109.48699,
+            30.283114
+        ],
+        "country_code": "cn"
+    },
+    "enshitujiazumiaozuzizhizhou": {
+        "coords": [
+            109.48699,
+            30.283114
+        ],
+        "country_code": "cn"
+    },
+    "仙桃市": {
+        "coords": [
+            113.453974,
+            30.364953
+        ],
+        "country_code": "cn"
+    },
+    "xiantaoshi": {
+        "coords": [
+            113.453974,
+            30.364953
+        ],
+        "country_code": "cn"
+    },
+    "潜江市": {
+        "coords": [
+            112.896866,
+            30.421215
+        ],
+        "country_code": "cn"
+    },
+    "qianjiangshi": {
+        "coords": [
+            112.896866,
+            30.421215
+        ],
+        "country_code": "cn"
+    },
+    "天门市": {
+        "coords": [
+            113.165862,
+            30.653061
+        ],
+        "country_code": "cn"
+    },
+    "tianmenshi": {
+        "coords": [
+            113.165862,
+            30.653061
+        ],
+        "country_code": "cn"
+    },
+    "神农架林区": {
+        "coords": [
+            110.671525,
+            31.744449
+        ],
+        "country_code": "cn"
+    },
+    "shennongjialinqu": {
+        "coords": [
+            110.671525,
+            31.744449
+        ],
+        "country_code": "cn"
+    },
+    "长沙市": {
+        "coords": [
+            112.982279,
+            28.19409
+        ],
+        "country_code": "cn"
+    },
+    "changshashi": {
+        "coords": [
+            112.982279,
+            28.19409
+        ],
+        "country_code": "cn"
+    },
+    "株洲市": {
+        "coords": [
+            113.151737,
+            27.835806
+        ],
+        "country_code": "cn"
+    },
+    "zhuzhoushi": {
+        "coords": [
+            113.151737,
+            27.835806
+        ],
+        "country_code": "cn"
+    },
+    "湘潭市": {
+        "coords": [
+            112.944052,
+            27.82973
+        ],
+        "country_code": "cn"
+    },
+    "xiangtanshi": {
+        "coords": [
+            112.944052,
+            27.82973
+        ],
+        "country_code": "cn"
+    },
+    "衡阳市": {
+        "coords": [
+            112.607693,
+            26.900358
+        ],
+        "country_code": "cn"
+    },
+    "hengyangshi": {
+        "coords": [
+            112.607693,
+            26.900358
+        ],
+        "country_code": "cn"
+    },
+    "邵阳市": {
+        "coords": [
+            111.46923,
+            27.237842
+        ],
+        "country_code": "cn"
+    },
+    "shaoyangshi": {
+        "coords": [
+            111.46923,
+            27.237842
+        ],
+        "country_code": "cn"
+    },
+    "岳阳市": {
+        "coords": [
+            113.132855,
+            29.37029
+        ],
+        "country_code": "cn"
+    },
+    "yueyangshi": {
+        "coords": [
+            113.132855,
+            29.37029
+        ],
+        "country_code": "cn"
+    },
+    "常德市": {
+        "coords": [
+            111.691347,
+            29.040225
+        ],
+        "country_code": "cn"
+    },
+    "changdeshi": {
+        "coords": [
+            111.691347,
+            29.040225
+        ],
+        "country_code": "cn"
+    },
+    "张家界市": {
+        "coords": [
+            110.479921,
+            29.127401
+        ],
+        "country_code": "cn"
+    },
+    "zhangjiajieshi": {
+        "coords": [
+            110.479921,
+            29.127401
+        ],
+        "country_code": "cn"
+    },
+    "益阳市": {
+        "coords": [
+            112.355042,
+            28.570066
+        ],
+        "country_code": "cn"
+    },
+    "yiyangshi": {
+        "coords": [
+            112.355042,
+            28.570066
+        ],
+        "country_code": "cn"
+    },
+    "郴州市": {
+        "coords": [
+            113.032067,
+            25.793589
+        ],
+        "country_code": "cn"
+    },
+    "chenzhoushi": {
+        "coords": [
+            113.032067,
+            25.793589
+        ],
+        "country_code": "cn"
+    },
+    "永州市": {
+        "coords": [
+            155.019,
+            263.00516
+        ],
+        "country_code": "cn"
+    },
+    "yongzhoushi": {
+        "coords": [
+            155.08019,
+            216.34516
+        ],
+        "country_code": "cn"
+    },
+    "怀化市": {
+        "coords": [
+            109.97824,
+            27.550082
+        ],
+        "country_code": "cn"
+    },
+    "huaihuashi": {
+        "coords": [
+            109.97824,
+            27.550082
+        ],
+        "country_code": "cn"
+    },
+    "娄底市": {
+        "coords": [
+            112.008497,
+            27.728136
+        ],
+        "country_code": "cn"
+    },
+    "loudishi": {
+        "coords": [
+            112.008497,
+            27.728136
+        ],
+        "country_code": "cn"
+    },
+    "湘西土家族苗族自治州": {
+        "coords": [
+            109.739735,
+            28.314296
+        ],
+        "country_code": "cn"
+    },
+    "xiangxitujiazumiaozuzizhizhou": {
+        "coords": [
+            109.739735,
+            28.314296
+        ],
+        "country_code": "cn"
+    },
+    "广州市": {
+        "coords": [
+            113.280637,
+            23.125178
+        ],
+        "country_code": "cn"
+    },
+    "guangzhoushi": {
+        "coords": [
+            113.280637,
+            23.125178
+        ],
+        "country_code": "cn"
+    },
+    "韶关市": {
+        "coords": [
+            113.591544,
+            24.801322
+        ],
+        "country_code": "cn"
+    },
+    "shaoguanshi": {
+        "coords": [
+            113.591544,
+            24.801322
+        ],
+        "country_code": "cn"
+    },
+    "深圳市": {
+        "coords": [
+            114.085947,
+            22.547
+        ],
+        "country_code": "cn"
+    },
+    "shenzhenshi": {
+        "coords": [
+            114.085947,
+            22.547
+        ],
+        "country_code": "cn"
+    },
+    "珠海市": {
+        "coords": [
+            113.553986,
+            22.224979
+        ],
+        "country_code": "cn"
+    },
+    "zhuhaishi": {
+        "coords": [
+            113.553986,
+            22.224979
+        ],
+        "country_code": "cn"
+    },
+    "汕头市": {
+        "coords": [
+            116.708463,
+            23.37102
+        ],
+        "country_code": "cn"
+    },
+    "shantoushi": {
+        "coords": [
+            116.708463,
+            23.37102
+        ],
+        "country_code": "cn"
+    },
+    "佛山市": {
+        "coords": [
+            113.122717,
+            23.028762
+        ],
+        "country_code": "cn"
+    },
+    "foshanshi": {
+        "coords": [
+            113.122717,
+            23.028762
+        ],
+        "country_code": "cn"
+    },
+    "江门市": {
+        "coords": [
+            113.094942,
+            22.590431
+        ],
+        "country_code": "cn"
+    },
+    "jiangmenshi": {
+        "coords": [
+            113.094942,
+            22.590431
+        ],
+        "country_code": "cn"
+    },
+    "湛江市": {
+        "coords": [
+            110.364977,
+            21.274898
+        ],
+        "country_code": "cn"
+    },
+    "zhanjiangshi": {
+        "coords": [
+            110.364977,
+            21.274898
+        ],
+        "country_code": "cn"
+    },
+    "茂名市": {
+        "coords": [
+            110.919229,
+            21.659751
+        ],
+        "country_code": "cn"
+    },
+    "maomingshi": {
+        "coords": [
+            110.919229,
+            21.659751
+        ],
+        "country_code": "cn"
+    },
+    "肇庆市": {
+        "coords": [
+            112.472529,
+            23.051546
+        ],
+        "country_code": "cn"
+    },
+    "zhaoqingshi": {
+        "coords": [
+            112.472529,
+            23.051546
+        ],
+        "country_code": "cn"
+    },
+    "惠州市": {
+        "coords": [
+            114.412599,
+            23.079404
+        ],
+        "country_code": "cn"
+    },
+    "huizhoushi": {
+        "coords": [
+            114.412599,
+            23.079404
+        ],
+        "country_code": "cn"
+    },
+    "梅州市": {
+        "coords": [
+            116.117582,
+            24.299112
+        ],
+        "country_code": "cn"
+    },
+    "meizhoushi": {
+        "coords": [
+            116.117582,
+            24.299112
+        ],
+        "country_code": "cn"
+    },
+    "汕尾市": {
+        "coords": [
+            115.364238,
+            22.774485
+        ],
+        "country_code": "cn"
+    },
+    "shanweishi": {
+        "coords": [
+            115.364238,
+            22.774485
+        ],
+        "country_code": "cn"
+    },
+    "河源市": {
+        "coords": [
+            114.697802,
+            23.746266
+        ],
+        "country_code": "cn"
+    },
+    "heyuanshi": {
+        "coords": [
+            114.697802,
+            23.746266
+        ],
+        "country_code": "cn"
+    },
+    "阳江市": {
+        "coords": [
+            111.975107,
+            21.859222
+        ],
+        "country_code": "cn"
+    },
+    "yangjiangshi": {
+        "coords": [
+            111.975107,
+            21.859222
+        ],
+        "country_code": "cn"
+    },
+    "清远市": {
+        "coords": [
+            113.051227,
+            23.685022
+        ],
+        "country_code": "cn"
+    },
+    "qingyuanshi": {
+        "coords": [
+            113.051227,
+            23.685022
+        ],
+        "country_code": "cn"
+    },
+    "东莞市": {
+        "coords": [
+            113.746262,
+            23.046237
+        ],
+        "country_code": "cn"
+    },
+    "dongguanshi": {
+        "coords": [
+            113.746262,
+            23.046237
+        ],
+        "country_code": "cn"
+    },
+    "中山市": {
+        "coords": [
+            113.382391,
+            22.521113
+        ],
+        "country_code": "cn"
+    },
+    "zhongshanshi": {
+        "coords": [
+            113.382391,
+            22.521113
+        ],
+        "country_code": "cn"
+    },
+    "潮州市": {
+        "coords": [
+            116.632301,
+            23.661701
+        ],
+        "country_code": "cn"
+    },
+    "chaozhoushi": {
+        "coords": [
+            116.632301,
+            23.661701
+        ],
+        "country_code": "cn"
+    },
+    "揭阳市": {
+        "coords": [
+            116.355733,
+            23.543778
+        ],
+        "country_code": "cn"
+    },
+    "jieyangshi": {
+        "coords": [
+            116.355733,
+            23.543778
+        ],
+        "country_code": "cn"
+    },
+    "云浮市": {
+        "coords": [
+            112.044439,
+            22.929801
+        ],
+        "country_code": "cn"
+    },
+    "yunfushi": {
+        "coords": [
+            112.044439,
+            22.929801
+        ],
+        "country_code": "cn"
+    },
+    "南宁市": {
+        "coords": [
+            108.320004,
+            22.82402
+        ],
+        "country_code": "cn"
+    },
+    "nanningshi": {
+        "coords": [
+            108.320004,
+            22.82402
+        ],
+        "country_code": "cn"
+    },
+    "柳州市": {
+        "coords": [
+            109.411703,
+            24.314617
+        ],
+        "country_code": "cn"
+    },
+    "liuzhoushi": {
+        "coords": [
+            109.411703,
+            24.314617
+        ],
+        "country_code": "cn"
+    },
+    "桂林市": {
+        "coords": [
+            110.299121,
+            25.274215
+        ],
+        "country_code": "cn"
+    },
+    "guilinshi": {
+        "coords": [
+            110.299121,
+            25.274215
+        ],
+        "country_code": "cn"
+    },
+    "梧州市": {
+        "coords": [
+            111.297604,
+            23.474803
+        ],
+        "country_code": "cn"
+    },
+    "wuzhoushi": {
+        "coords": [
+            111.297604,
+            23.474803
+        ],
+        "country_code": "cn"
+    },
+    "北海市": {
+        "coords": [
+            109.119254,
+            21.473343
+        ],
+        "country_code": "cn"
+    },
+    "beihaishi": {
+        "coords": [
+            109.119254,
+            21.473343
+        ],
+        "country_code": "cn"
+    },
+    "防城港市": {
+        "coords": [
+            108.345478,
+            21.614631
+        ],
+        "country_code": "cn"
+    },
+    "fangchenggangshi": {
+        "coords": [
+            108.345478,
+            21.614631
+        ],
+        "country_code": "cn"
+    },
+    "钦州市": {
+        "coords": [
+            108.624175,
+            21.967127
+        ],
+        "country_code": "cn"
+    },
+    "qinzhoushi": {
+        "coords": [
+            108.624175,
+            21.967127
+        ],
+        "country_code": "cn"
+    },
+    "贵港市": {
+        "coords": [
+            109.602146,
+            23.0936
+        ],
+        "country_code": "cn"
+    },
+    "guigangshi": {
+        "coords": [
+            109.602146,
+            23.0936
+        ],
+        "country_code": "cn"
+    },
+    "玉林市": {
+        "coords": [
+            110.154393,
+            22.63136
+        ],
+        "country_code": "cn"
+    },
+    "yulinshi": {
+        "coords": [
+            109.741193,
+            38.290162
+        ],
+        "country_code": "cn"
+    },
+    "百色市": {
+        "coords": [
+            106.616285,
+            23.897742
+        ],
+        "country_code": "cn"
+    },
+    "baiseshi": {
+        "coords": [
+            106.616285,
+            23.897742
+        ],
+        "country_code": "cn"
+    },
+    "贺州市": {
+        "coords": [
+            111.552056,
+            24.414141
+        ],
+        "country_code": "cn"
+    },
+    "hezhoushi": {
+        "coords": [
+            111.552056,
+            24.414141
+        ],
+        "country_code": "cn"
+    },
+    "河池市": {
+        "coords": [
+            108.062105,
+            24.695899
+        ],
+        "country_code": "cn"
+    },
+    "hechishi": {
+        "coords": [
+            108.062105,
+            24.695899
+        ],
+        "country_code": "cn"
+    },
+    "来宾市": {
+        "coords": [
+            109.229772,
+            23.733766
+        ],
+        "country_code": "cn"
+    },
+    "laibinshi": {
+        "coords": [
+            109.229772,
+            23.733766
+        ],
+        "country_code": "cn"
+    },
+    "崇左市": {
+        "coords": [
+            107.353926,
+            22.404108
+        ],
+        "country_code": "cn"
+    },
+    "chongzuoshi": {
+        "coords": [
+            107.353926,
+            22.404108
+        ],
+        "country_code": "cn"
+    },
+    "海口市": {
+        "coords": [
+            110.33119,
+            20.031971
+        ],
+        "country_code": "cn"
+    },
+    "haikoushi": {
+        "coords": [
+            110.33119,
+            20.031971
+        ],
+        "country_code": "cn"
+    },
+    "三亚市": {
+        "coords": [
+            109.508268,
+            18.247872
+        ],
+        "country_code": "cn"
+    },
+    "sanyashi": {
+        "coords": [
+            109.508268,
+            18.247872
+        ],
+        "country_code": "cn"
+    },
+    "三沙市": {
+        "coords": [
+            112.34882,
+            16.831039
+        ],
+        "country_code": "cn"
+    },
+    "sanshashi": {
+        "coords": [
+            112.34882,
+            16.831039
+        ],
+        "country_code": "cn"
+    },
+    "儋州市": {
+        "coords": [
+            109.576782,
+            19.517486
+        ],
+        "country_code": "cn"
+    },
+    "danzhoushi": {
+        "coords": [
+            109.576782,
+            19.517486
+        ],
+        "country_code": "cn"
+    },
+    "五指山市": {
+        "coords": [
+            109.516662,
+            18.776921
+        ],
+        "country_code": "cn"
+    },
+    "wuzhishanshi": {
+        "coords": [
+            109.516662,
+            18.776921
+        ],
+        "country_code": "cn"
+    },
+    "琼海市": {
+        "coords": [
+            110.466785,
+            19.246011
+        ],
+        "country_code": "cn"
+    },
+    "qionghaishi": {
+        "coords": [
+            110.466785,
+            19.246011
+        ],
+        "country_code": "cn"
+    },
+    "文昌市": {
+        "coords": [
+            110.753975,
+            19.612986
+        ],
+        "country_code": "cn"
+    },
+    "wenchangshi": {
+        "coords": [
+            110.753975,
+            19.612986
+        ],
+        "country_code": "cn"
+    },
+    "万宁市": {
+        "coords": [
+            110.388793,
+            18.796216
+        ],
+        "country_code": "cn"
+    },
+    "wanningshi": {
+        "coords": [
+            110.388793,
+            18.796216
+        ],
+        "country_code": "cn"
+    },
+    "东方市": {
+        "coords": [
+            108.653789,
+            19.10198
+        ],
+        "country_code": "cn"
+    },
+    "dongfangshi": {
+        "coords": [
+            108.653789,
+            19.10198
+        ],
+        "country_code": "cn"
+    },
+    "定安县": {
+        "coords": [
+            110.349235,
+            19.684966
+        ],
+        "country_code": "cn"
+    },
+    "dinganxian": {
+        "coords": [
+            110.349235,
+            19.684966
+        ],
+        "country_code": "cn"
+    },
+    "屯昌县": {
+        "coords": [
+            110.102773,
+            19.362916
+        ],
+        "country_code": "cn"
+    },
+    "tunchangxian": {
+        "coords": [
+            110.102773,
+            19.362916
+        ],
+        "country_code": "cn"
+    },
+    "澄迈县": {
+        "coords": [
+            110.007147,
+            19.737095
+        ],
+        "country_code": "cn"
+    },
+    "chengmaixian": {
+        "coords": [
+            110.007147,
+            19.737095
+        ],
+        "country_code": "cn"
+    },
+    "临高县": {
+        "coords": [
+            109.687697,
+            19.908293
+        ],
+        "country_code": "cn"
+    },
+    "lingaoxian": {
+        "coords": [
+            109.687697,
+            19.908293
+        ],
+        "country_code": "cn"
+    },
+    "白沙黎族自治县": {
+        "coords": [
+            109.452606,
+            19.224584
+        ],
+        "country_code": "cn"
+    },
+    "baishalizuzizhixian": {
+        "coords": [
+            109.452606,
+            19.224584
+        ],
+        "country_code": "cn"
+    },
+    "昌江黎族自治县": {
+        "coords": [
+            109.053351,
+            19.260968
+        ],
+        "country_code": "cn"
+    },
+    "changjianglizuzizhixian": {
+        "coords": [
+            109.053351,
+            19.260968
+        ],
+        "country_code": "cn"
+    },
+    "乐东黎族自治县": {
+        "coords": [
+            109.175444,
+            18.74758
+        ],
+        "country_code": "cn"
+    },
+    "ledonglizuzizhixian": {
+        "coords": [
+            109.175444,
+            18.74758
+        ],
+        "country_code": "cn"
+    },
+    "陵水黎族自治县": {
+        "coords": [
+            110.037218,
+            18.505006
+        ],
+        "country_code": "cn"
+    },
+    "lingshuilizuzizhixian": {
+        "coords": [
+            110.037218,
+            18.505006
+        ],
+        "country_code": "cn"
+    },
+    "保亭黎族苗族自治县": {
+        "coords": [
+            109.70245,
+            18.636371
+        ],
+        "country_code": "cn"
+    },
+    "baotinglizumiaozuzizhixian": {
+        "coords": [
+            109.70245,
+            18.636371
+        ],
+        "country_code": "cn"
+    },
+    "琼中黎族苗族自治县": {
+        "coords": [
+            109.839996,
+            19.03557
+        ],
+        "country_code": "cn"
+    },
+    "qiongzhonglizumiaozuzizhixian": {
+        "coords": [
+            109.839996,
+            19.03557
+        ],
+        "country_code": "cn"
+    },
+    "万州区": {
+        "coords": [
+            108.380246,
+            30.807807
+        ],
+        "country_code": "cn"
+    },
+    "wanzhouqu": {
+        "coords": [
+            108.380246,
+            30.807807
+        ],
+        "country_code": "cn"
+    },
+    "涪陵区": {
+        "coords": [
+            107.394905,
+            29.703652
+        ],
+        "country_code": "cn"
+    },
+    "fulingqu": {
+        "coords": [
+            107.394905,
+            29.703652
+        ],
+        "country_code": "cn"
+    },
+    "渝中区": {
+        "coords": [
+            106.56288,
+            29.556742
+        ],
+        "country_code": "cn"
+    },
+    "yuzhongqu": {
+        "coords": [
+            106.56288,
+            29.556742
+        ],
+        "country_code": "cn"
+    },
+    "大渡口区": {
+        "coords": [
+            106.48613,
+            29.481002
+        ],
+        "country_code": "cn"
+    },
+    "dadukouqu": {
+        "coords": [
+            106.48613,
+            29.481002
+        ],
+        "country_code": "cn"
+    },
+    "江北区": {
+        "coords": [
+            106.532844,
+            29.575352
+        ],
+        "country_code": "cn"
+    },
+    "jiangbeiqu": {
+        "coords": [
+            106.532844,
+            29.575352
+        ],
+        "country_code": "cn"
+    },
+    "沙坪坝区": {
+        "coords": [
+            106.4542,
+            29.541224
+        ],
+        "country_code": "cn"
+    },
+    "shapingbaqu": {
+        "coords": [
+            106.4542,
+            29.541224
+        ],
+        "country_code": "cn"
+    },
+    "九龙坡区": {
+        "coords": [
+            106.480989,
+            29.523492
+        ],
+        "country_code": "cn"
+    },
+    "jiulongpoqu": {
+        "coords": [
+            106.480989,
+            29.523492
+        ],
+        "country_code": "cn"
+    },
+    "南岸区": {
+        "coords": [
+            106.560813,
+            29.523992
+        ],
+        "country_code": "cn"
+    },
+    "nananqu": {
+        "coords": [
+            106.560813,
+            29.523992
+        ],
+        "country_code": "cn"
+    },
+    "北碚区": {
+        "coords": [
+            106.437868,
+            29.82543
+        ],
+        "country_code": "cn"
+    },
+    "beibeiqu": {
+        "coords": [
+            106.437868,
+            29.82543
+        ],
+        "country_code": "cn"
+    },
+    "綦江区": {
+        "coords": [
+            106.651417,
+            29.028091
+        ],
+        "country_code": "cn"
+    },
+    "qijiangqu": {
+        "coords": [
+            106.651417,
+            29.028091
+        ],
+        "country_code": "cn"
+    },
+    "大足区": {
+        "coords": [
+            105.715319,
+            29.700498
+        ],
+        "country_code": "cn"
+    },
+    "dazuqu": {
+        "coords": [
+            105.715319,
+            29.700498
+        ],
+        "country_code": "cn"
+    },
+    "渝北区": {
+        "coords": [
+            106.512851,
+            29.601451
+        ],
+        "country_code": "cn"
+    },
+    "yubeiqu": {
+        "coords": [
+            106.512851,
+            29.601451
+        ],
+        "country_code": "cn"
+    },
+    "巴南区": {
+        "coords": [
+            106.519423,
+            29.381919
+        ],
+        "country_code": "cn"
+    },
+    "bananqu": {
+        "coords": [
+            106.519423,
+            29.381919
+        ],
+        "country_code": "cn"
+    },
+    "黔江区": {
+        "coords": [
+            108.782577,
+            29.527548
+        ],
+        "country_code": "cn"
+    },
+    "qianjiangqu": {
+        "coords": [
+            108.782577,
+            29.527548
+        ],
+        "country_code": "cn"
+    },
+    "长寿区": {
+        "coords": [
+            107.074854,
+            29.833671
+        ],
+        "country_code": "cn"
+    },
+    "changshouqu": {
+        "coords": [
+            107.074854,
+            29.833671
+        ],
+        "country_code": "cn"
+    },
+    "江津区": {
+        "coords": [
+            106.253156,
+            29.283387
+        ],
+        "country_code": "cn"
+    },
+    "jiangjinqu": {
+        "coords": [
+            106.253156,
+            29.283387
+        ],
+        "country_code": "cn"
+    },
+    "合川区": {
+        "coords": [
+            106.265554,
+            29.990993
+        ],
+        "country_code": "cn"
+    },
+    "hechuanqu": {
+        "coords": [
+            106.265554,
+            29.990993
+        ],
+        "country_code": "cn"
+    },
+    "永川区": {
+        "coords": [
+            105.894714,
+            29.348748
+        ],
+        "country_code": "cn"
+    },
+    "yongchuanqu": {
+        "coords": [
+            105.894714,
+            29.348748
+        ],
+        "country_code": "cn"
+    },
+    "南川区": {
+        "coords": [
+            107.098153,
+            29.156646
+        ],
+        "country_code": "cn"
+    },
+    "nanchuanqu": {
+        "coords": [
+            107.098153,
+            29.156646
+        ],
+        "country_code": "cn"
+    },
+    "璧山区": {
+        "coords": [
+            106.231126,
+            29.593581
+        ],
+        "country_code": "cn"
+    },
+    "bishanqu": {
+        "coords": [
+            106.231126,
+            29.593581
+        ],
+        "country_code": "cn"
+    },
+    "铜梁区": {
+        "coords": [
+            106.054948,
+            29.839944
+        ],
+        "country_code": "cn"
+    },
+    "tongliangqu": {
+        "coords": [
+            106.054948,
+            29.839944
+        ],
+        "country_code": "cn"
+    },
+    "潼南区": {
+        "coords": [
+            105.841818,
+            30.189554
+        ],
+        "country_code": "cn"
+    },
+    "tongnanqu": {
+        "coords": [
+            105.841818,
+            30.189554
+        ],
+        "country_code": "cn"
+    },
+    "荣昌区": {
+        "coords": [
+            105.594061,
+            29.403627
+        ],
+        "country_code": "cn"
+    },
+    "rongchangqu": {
+        "coords": [
+            105.594061,
+            29.403627
+        ],
+        "country_code": "cn"
+    },
+    "开州区": {
+        "coords": [
+            108.413317,
+            31.167735
+        ],
+        "country_code": "cn"
+    },
+    "kaizhouqu": {
+        "coords": [
+            108.413317,
+            31.167735
+        ],
+        "country_code": "cn"
+    },
+    "梁平区": {
+        "coords": [
+            107.800034,
+            30.672168
+        ],
+        "country_code": "cn"
+    },
+    "liangpingqu": {
+        "coords": [
+            107.800034,
+            30.672168
+        ],
+        "country_code": "cn"
+    },
+    "武隆区": {
+        "coords": [
+            107.75655,
+            29.32376
+        ],
+        "country_code": "cn"
+    },
+    "wulongqu": {
+        "coords": [
+            107.75655,
+            29.32376
+        ],
+        "country_code": "cn"
+    },
+    "城口县": {
+        "coords": [
+            108.6649,
+            31.946293
+        ],
+        "country_code": "cn"
+    },
+    "chengkouxian": {
+        "coords": [
+            108.6649,
+            31.946293
+        ],
+        "country_code": "cn"
+    },
+    "丰都县": {
+        "coords": [
+            107.73248,
+            29.866424
+        ],
+        "country_code": "cn"
+    },
+    "fengdouxian": {
+        "coords": [
+            107.73248,
+            29.866424
+        ],
+        "country_code": "cn"
+    },
+    "垫江县": {
+        "coords": [
+            107.348692,
+            30.330012
+        ],
+        "country_code": "cn"
+    },
+    "dianjiangxian": {
+        "coords": [
+            107.348692,
+            30.330012
+        ],
+        "country_code": "cn"
+    },
+    "忠县": {
+        "coords": [
+            108.037518,
+            30.291537
+        ],
+        "country_code": "cn"
+    },
+    "zhongxian": {
+        "coords": [
+            108.037518,
+            30.291537
+        ],
+        "country_code": "cn"
+    },
+    "云阳县": {
+        "coords": [
+            108.697698,
+            30.930529
+        ],
+        "country_code": "cn"
+    },
+    "yunyangxian": {
+        "coords": [
+            108.697698,
+            30.930529
+        ],
+        "country_code": "cn"
+    },
+    "奉节县": {
+        "coords": [
+            109.465774,
+            31.019967
+        ],
+        "country_code": "cn"
+    },
+    "fengjiexian": {
+        "coords": [
+            109.465774,
+            31.019967
+        ],
+        "country_code": "cn"
+    },
+    "巫山县": {
+        "coords": [
+            109.878928,
+            31.074843
+        ],
+        "country_code": "cn"
+    },
+    "wushanxian": {
+        "coords": [
+            109.878928,
+            31.074843
+        ],
+        "country_code": "cn"
+    },
+    "巫溪县": {
+        "coords": [
+            109.628912,
+            31.3966
+        ],
+        "country_code": "cn"
+    },
+    "wuxixian": {
+        "coords": [
+            109.628912,
+            31.3966
+        ],
+        "country_code": "cn"
+    },
+    "石柱土家族自治县": {
+        "coords": [
+            108.112448,
+            29.99853
+        ],
+        "country_code": "cn"
+    },
+    "shizhutujiazuzizhixian": {
+        "coords": [
+            108.112448,
+            29.99853
+        ],
+        "country_code": "cn"
+    },
+    "秀山土家族苗族自治县": {
+        "coords": [
+            108.996043,
+            28.444772
+        ],
+        "country_code": "cn"
+    },
+    "xiushantujiazumiaozuzizhixian": {
+        "coords": [
+            108.996043,
+            28.444772
+        ],
+        "country_code": "cn"
+    },
+    "酉阳土家族苗族自治县": {
+        "coords": [
+            108.767201,
+            28.839828
+        ],
+        "country_code": "cn"
+    },
+    "youyangtujiazumiaozuzizhixian": {
+        "coords": [
+            108.767201,
+            28.839828
+        ],
+        "country_code": "cn"
+    },
+    "彭水苗族土家族自治县": {
+        "coords": [
+            108.166551,
+            29.293856
+        ],
+        "country_code": "cn"
+    },
+    "pengshuimiaozutujiazuzizhixian": {
+        "coords": [
+            108.166551,
+            29.293856
+        ],
+        "country_code": "cn"
+    },
+    "成都市": {
+        "coords": [
+            104.065735,
+            30.659462
+        ],
+        "country_code": "cn"
+    },
+    "chengdushi": {
+        "coords": [
+            104.065735,
+            30.659462
+        ],
+        "country_code": "cn"
+    },
+    "自贡市": {
+        "coords": [
+            104.773447,
+            29.352765
+        ],
+        "country_code": "cn"
+    },
+    "zigongshi": {
+        "coords": [
+            104.773447,
+            29.352765
+        ],
+        "country_code": "cn"
+    },
+    "攀枝花市": {
+        "coords": [
+            101.716007,
+            26.580446
+        ],
+        "country_code": "cn"
+    },
+    "panzhihuashi": {
+        "coords": [
+            101.716007,
+            26.580446
+        ],
+        "country_code": "cn"
+    },
+    "泸州市": {
+        "coords": [
+            105.443348,
+            28.889138
+        ],
+        "country_code": "cn"
+    },
+    "luzhoushi": {
+        "coords": [
+            105.443348,
+            28.889138
+        ],
+        "country_code": "cn"
+    },
+    "德阳市": {
+        "coords": [
+            104.398651,
+            31.127991
+        ],
+        "country_code": "cn"
+    },
+    "deyangshi": {
+        "coords": [
+            104.398651,
+            31.127991
+        ],
+        "country_code": "cn"
+    },
+    "绵阳市": {
+        "coords": [
+            104.741722,
+            31.46402
+        ],
+        "country_code": "cn"
+    },
+    "mianyangshi": {
+        "coords": [
+            104.741722,
+            31.46402
+        ],
+        "country_code": "cn"
+    },
+    "广元市": {
+        "coords": [
+            105.829757,
+            32.433668
+        ],
+        "country_code": "cn"
+    },
+    "guangyuanshi": {
+        "coords": [
+            105.829757,
+            32.433668
+        ],
+        "country_code": "cn"
+    },
+    "遂宁市": {
+        "coords": [
+            105.571331,
+            30.513311
+        ],
+        "country_code": "cn"
+    },
+    "suiningshi": {
+        "coords": [
+            105.571331,
+            30.513311
+        ],
+        "country_code": "cn"
+    },
+    "内江市": {
+        "coords": [
+            105.066138,
+            29.58708
+        ],
+        "country_code": "cn"
+    },
+    "neijiangshi": {
+        "coords": [
+            105.066138,
+            29.58708
+        ],
+        "country_code": "cn"
+    },
+    "乐山市": {
+        "coords": [
+            103.761263,
+            29.582024
+        ],
+        "country_code": "cn"
+    },
+    "leshanshi": {
+        "coords": [
+            103.761263,
+            29.582024
+        ],
+        "country_code": "cn"
+    },
+    "南充市": {
+        "coords": [
+            106.082974,
+            30.795281
+        ],
+        "country_code": "cn"
+    },
+    "nanchongshi": {
+        "coords": [
+            106.082974,
+            30.795281
+        ],
+        "country_code": "cn"
+    },
+    "眉山市": {
+        "coords": [
+            103.831788,
+            30.048318
+        ],
+        "country_code": "cn"
+    },
+    "meishanshi": {
+        "coords": [
+            103.831788,
+            30.048318
+        ],
+        "country_code": "cn"
+    },
+    "宜宾市": {
+        "coords": [
+            104.630825,
+            28.760189
+        ],
+        "country_code": "cn"
+    },
+    "yibinshi": {
+        "coords": [
+            104.630825,
+            28.760189
+        ],
+        "country_code": "cn"
+    },
+    "广安市": {
+        "coords": [
+            106.633369,
+            30.456398
+        ],
+        "country_code": "cn"
+    },
+    "guanganshi": {
+        "coords": [
+            106.633369,
+            30.456398
+        ],
+        "country_code": "cn"
+    },
+    "达州市": {
+        "coords": [
+            107.502262,
+            31.209484
+        ],
+        "country_code": "cn"
+    },
+    "dazhoushi": {
+        "coords": [
+            107.502262,
+            31.209484
+        ],
+        "country_code": "cn"
+    },
+    "雅安市": {
+        "coords": [
+            103.001033,
+            29.987722
+        ],
+        "country_code": "cn"
+    },
+    "yaanshi": {
+        "coords": [
+            103.001033,
+            29.987722
+        ],
+        "country_code": "cn"
+    },
+    "巴中市": {
+        "coords": [
+            106.753669,
+            31.858809
+        ],
+        "country_code": "cn"
+    },
+    "bazhongshi": {
+        "coords": [
+            106.753669,
+            31.858809
+        ],
+        "country_code": "cn"
+    },
+    "资阳市": {
+        "coords": [
+            104.641917,
+            30.122211
+        ],
+        "country_code": "cn"
+    },
+    "ziyangshi": {
+        "coords": [
+            104.641917,
+            30.122211
+        ],
+        "country_code": "cn"
+    },
+    "阿坝藏族羌族自治州": {
+        "coords": [
+            102.221374,
+            31.899792
+        ],
+        "country_code": "cn"
+    },
+    "abazangzuqiangzuzizhizhou": {
+        "coords": [
+            102.221374,
+            31.899792
+        ],
+        "country_code": "cn"
+    },
+    "甘孜藏族自治州": {
+        "coords": [
+            101.963815,
+            30.050663
+        ],
+        "country_code": "cn"
+    },
+    "ganzizangzuzizhizhou": {
+        "coords": [
+            101.963815,
+            30.050663
+        ],
+        "country_code": "cn"
+    },
+    "凉山彝族自治州": {
+        "coords": [
+            102.258746,
+            27.886762
+        ],
+        "country_code": "cn"
+    },
+    "liangshanyizuzizhizhou": {
+        "coords": [
+            102.258746,
+            27.886762
+        ],
+        "country_code": "cn"
+    },
+    "贵阳市": {
+        "coords": [
+            106.713478,
+            26.578343
+        ],
+        "country_code": "cn"
+    },
+    "guiyangshi": {
+        "coords": [
+            106.713478,
+            26.578343
+        ],
+        "country_code": "cn"
+    },
+    "六盘水市": {
+        "coords": [
+            104.846743,
+            26.584643
+        ],
+        "country_code": "cn"
+    },
+    "liupanshuishi": {
+        "coords": [
+            104.846743,
+            26.584643
+        ],
+        "country_code": "cn"
+    },
+    "遵义市": {
+        "coords": [
+            106.937265,
+            27.706626
+        ],
+        "country_code": "cn"
+    },
+    "zunyishi": {
+        "coords": [
+            106.937265,
+            27.706626
+        ],
+        "country_code": "cn"
+    },
+    "安顺市": {
+        "coords": [
+            105.932188,
+            26.245544
+        ],
+        "country_code": "cn"
+    },
+    "anshunshi": {
+        "coords": [
+            105.932188,
+            26.245544
+        ],
+        "country_code": "cn"
+    },
+    "毕节市": {
+        "coords": [
+            105.28501,
+            27.301693
+        ],
+        "country_code": "cn"
+    },
+    "bijieshi": {
+        "coords": [
+            105.28501,
+            27.301693
+        ],
+        "country_code": "cn"
+    },
+    "铜仁市": {
+        "coords": [
+            109.191555,
+            27.718346
+        ],
+        "country_code": "cn"
+    },
+    "tongrenshi": {
+        "coords": [
+            109.191555,
+            27.718346
+        ],
+        "country_code": "cn"
+    },
+    "黔西南布依族苗族自治州": {
+        "coords": [
+            104.897971,
+            25.08812
+        ],
+        "country_code": "cn"
+    },
+    "qianxinanbuyizumiaozuzizhizhou": {
+        "coords": [
+            104.897971,
+            25.08812
+        ],
+        "country_code": "cn"
+    },
+    "黔东南苗族侗族自治州": {
+        "coords": [
+            107.977488,
+            26.583352
+        ],
+        "country_code": "cn"
+    },
+    "qiandongnanmiaozudongzuzizhizhou": {
+        "coords": [
+            107.977488,
+            26.583352
+        ],
+        "country_code": "cn"
+    },
+    "黔南布依族苗族自治州": {
+        "coords": [
+            107.517156,
+            26.258219
+        ],
+        "country_code": "cn"
+    },
+    "qiannanbuyizumiaozuzizhizhou": {
+        "coords": [
+            107.517156,
+            26.258219
+        ],
+        "country_code": "cn"
+    },
+    "昆明市": {
+        "coords": [
+            102.712251,
+            25.040609
+        ],
+        "country_code": "cn"
+    },
+    "kunmingshi": {
+        "coords": [
+            102.712251,
+            25.040609
+        ],
+        "country_code": "cn"
+    },
+    "曲靖市": {
+        "coords": [
+            103.797851,
+            25.501557
+        ],
+        "country_code": "cn"
+    },
+    "qujingshi": {
+        "coords": [
+            103.797851,
+            25.501557
+        ],
+        "country_code": "cn"
+    },
+    "玉溪市": {
+        "coords": [
+            102.543907,
+            24.350461
+        ],
+        "country_code": "cn"
+    },
+    "yuxishi": {
+        "coords": [
+            102.543907,
+            24.350461
+        ],
+        "country_code": "cn"
+    },
+    "保山市": {
+        "coords": [
+            99.167133,
+            25.111802
+        ],
+        "country_code": "cn"
+    },
+    "baoshanshi": {
+        "coords": [
+            99.167133,
+            25.111802
+        ],
+        "country_code": "cn"
+    },
+    "昭通市": {
+        "coords": [
+            103.717216,
+            27.336999
+        ],
+        "country_code": "cn"
+    },
+    "zhaotongshi": {
+        "coords": [
+            103.717216,
+            27.336999
+        ],
+        "country_code": "cn"
+    },
+    "丽江市": {
+        "coords": [
+            100.233026,
+            26.872108
+        ],
+        "country_code": "cn"
+    },
+    "lijiangshi": {
+        "coords": [
+            100.233026,
+            26.872108
+        ],
+        "country_code": "cn"
+    },
+    "普洱市": {
+        "coords": [
+            100.972344,
+            22.777321
+        ],
+        "country_code": "cn"
+    },
+    "puershi": {
+        "coords": [
+            100.972344,
+            22.777321
+        ],
+        "country_code": "cn"
+    },
+    "临沧市": {
+        "coords": [
+            100.08697,
+            23.886567
+        ],
+        "country_code": "cn"
+    },
+    "lincangshi": {
+        "coords": [
+            100.08697,
+            23.886567
+        ],
+        "country_code": "cn"
+    },
+    "楚雄彝族自治州": {
+        "coords": [
+            101.546046,
+            25.041988
+        ],
+        "country_code": "cn"
+    },
+    "chuxiongyizuzizhizhou": {
+        "coords": [
+            101.546046,
+            25.041988
+        ],
+        "country_code": "cn"
+    },
+    "红河哈尼族彝族自治州": {
+        "coords": [
+            103.384182,
+            23.366775
+        ],
+        "country_code": "cn"
+    },
+    "honghehanizuyizuzizhizhou": {
+        "coords": [
+            103.384182,
+            23.366775
+        ],
+        "country_code": "cn"
+    },
+    "文山壮族苗族自治州": {
+        "coords": [
+            104.24401,
+            23.36951
+        ],
+        "country_code": "cn"
+    },
+    "wenshanzhuangzumiaozuzizhizhou": {
+        "coords": [
+            104.24401,
+            23.36951
+        ],
+        "country_code": "cn"
+    },
+    "西双版纳傣族自治州": {
+        "coords": [
+            100.797941,
+            22.001724
+        ],
+        "country_code": "cn"
+    },
+    "xishuangbannadaizuzizhizhou": {
+        "coords": [
+            100.797941,
+            22.001724
+        ],
+        "country_code": "cn"
+    },
+    "大理白族自治州": {
+        "coords": [
+            100.225668,
+            25.589449
+        ],
+        "country_code": "cn"
+    },
+    "dalibaizuzizhizhou": {
+        "coords": [
+            100.225668,
+            25.589449
+        ],
+        "country_code": "cn"
+    },
+    "德宏傣族景颇族自治州": {
+        "coords": [
+            98.578363,
+            24.436694
+        ],
+        "country_code": "cn"
+    },
+    "dehongdaizujingpozuzizhizhou": {
+        "coords": [
+            98.578363,
+            24.436694
+        ],
+        "country_code": "cn"
+    },
+    "怒江傈僳族自治州": {
+        "coords": [
+            98.854304,
+            25.850949
+        ],
+        "country_code": "cn"
+    },
+    "nujianglisuzuzizhizhou": {
+        "coords": [
+            98.854304,
+            25.850949
+        ],
+        "country_code": "cn"
+    },
+    "迪庆藏族自治州": {
+        "coords": [
+            99.706463,
+            27.826853
+        ],
+        "country_code": "cn"
+    },
+    "diqingzangzuzizhizhou": {
+        "coords": [
+            99.706463,
+            27.826853
+        ],
+        "country_code": "cn"
+    },
+    "拉萨市": {
+        "coords": [
+            91.132212,
+            29.660361
+        ],
+        "country_code": "cn"
+    },
+    "lasashi": {
+        "coords": [
+            91.132212,
+            29.660361
+        ],
+        "country_code": "cn"
+    },
+    "日喀则市": {
+        "coords": [
+            88.885148,
+            29.267519
+        ],
+        "country_code": "cn"
+    },
+    "rikazeshi": {
+        "coords": [
+            88.885148,
+            29.267519
+        ],
+        "country_code": "cn"
+    },
+    "昌都市": {
+        "coords": [
+            97.178452,
+            31.136875
+        ],
+        "country_code": "cn"
+    },
+    "changdushi": {
+        "coords": [
+            97.178452,
+            31.136875
+        ],
+        "country_code": "cn"
+    },
+    "林芝市": {
+        "coords": [
+            94.362348,
+            29.654693
+        ],
+        "country_code": "cn"
+    },
+    "linzhishi": {
+        "coords": [
+            94.362348,
+            29.654693
+        ],
+        "country_code": "cn"
+    },
+    "山南市": {
+        "coords": [
+            91.766529,
+            29.236023
+        ],
+        "country_code": "cn"
+    },
+    "shannanshi": {
+        "coords": [
+            91.766529,
+            29.236023
+        ],
+        "country_code": "cn"
+    },
+    "那曲市": {
+        "coords": [
+            92.060214,
+            31.476004
+        ],
+        "country_code": "cn"
+    },
+    "naqushi": {
+        "coords": [
+            92.060214,
+            31.476004
+        ],
+        "country_code": "cn"
+    },
+    "阿里地区": {
+        "coords": [
+            80.105498,
+            32.503187
+        ],
+        "country_code": "cn"
+    },
+    "alidiqu": {
+        "coords": [
+            80.105498,
+            32.503187
+        ],
+        "country_code": "cn"
+    },
+    "西安市": {
+        "coords": [
+            108.948024,
+            34.263161
+        ],
+        "country_code": "cn"
+    },
+    "xianshi": {
+        "coords": [
+            108.948024,
+            34.263161
+        ],
+        "country_code": "cn"
+    },
+    "铜川市": {
+        "coords": [
+            108.979608,
+            34.916582
+        ],
+        "country_code": "cn"
+    },
+    "tongchuanshi": {
+        "coords": [
+            108.979608,
+            34.916582
+        ],
+        "country_code": "cn"
+    },
+    "宝鸡市": {
+        "coords": [
+            107.14487,
+            34.369315
+        ],
+        "country_code": "cn"
+    },
+    "baojishi": {
+        "coords": [
+            107.14487,
+            34.369315
+        ],
+        "country_code": "cn"
+    },
+    "咸阳市": {
+        "coords": [
+            108.705117,
+            34.333439
+        ],
+        "country_code": "cn"
+    },
+    "xianyangshi": {
+        "coords": [
+            108.705117,
+            34.333439
+        ],
+        "country_code": "cn"
+    },
+    "渭南市": {
+        "coords": [
+            109.502882,
+            34.499381
+        ],
+        "country_code": "cn"
+    },
+    "weinanshi": {
+        "coords": [
+            109.502882,
+            34.499381
+        ],
+        "country_code": "cn"
+    },
+    "延安市": {
+        "coords": [
+            109.49081,
+            36.596537
+        ],
+        "country_code": "cn"
+    },
+    "yananshi": {
+        "coords": [
+            109.49081,
+            36.596537
+        ],
+        "country_code": "cn"
+    },
+    "汉中市": {
+        "coords": [
+            107.028621,
+            33.077668
+        ],
+        "country_code": "cn"
+    },
+    "hanzhongshi": {
+        "coords": [
+            107.028621,
+            33.077668
+        ],
+        "country_code": "cn"
+    },
+    "榆林市": {
+        "coords": [
+            109.741193,
+            38.290162
+        ],
+        "country_code": "cn"
+    },
+    "安康市": {
+        "coords": [
+            109.029273,
+            32.6903
+        ],
+        "country_code": "cn"
+    },
+    "ankangshi": {
+        "coords": [
+            109.029273,
+            32.6903
+        ],
+        "country_code": "cn"
+    },
+    "商洛市": {
+        "coords": [
+            109.939776,
+            33.868319
+        ],
+        "country_code": "cn"
+    },
+    "shangluoshi": {
+        "coords": [
+            109.939776,
+            33.868319
+        ],
+        "country_code": "cn"
+    },
+    "兰州市": {
+        "coords": [
+            103.823557,
+            36.058039
+        ],
+        "country_code": "cn"
+    },
+    "lanzhoushi": {
+        "coords": [
+            103.823557,
+            36.058039
+        ],
+        "country_code": "cn"
+    },
+    "嘉峪关市": {
+        "coords": [
+            98.277304,
+            39.786529
+        ],
+        "country_code": "cn"
+    },
+    "jiayuguanshi": {
+        "coords": [
+            98.277304,
+            39.786529
+        ],
+        "country_code": "cn"
+    },
+    "金昌市": {
+        "coords": [
+            102.187888,
+            38.514238
+        ],
+        "country_code": "cn"
+    },
+    "jinchangshi": {
+        "coords": [
+            102.187888,
+            38.514238
+        ],
+        "country_code": "cn"
+    },
+    "白银市": {
+        "coords": [
+            104.173606,
+            36.54568
+        ],
+        "country_code": "cn"
+    },
+    "baiyinshi": {
+        "coords": [
+            104.173606,
+            36.54568
+        ],
+        "country_code": "cn"
+    },
+    "天水市": {
+        "coords": [
+            105.724998,
+            34.578529
+        ],
+        "country_code": "cn"
+    },
+    "tianshuishi": {
+        "coords": [
+            105.724998,
+            34.578529
+        ],
+        "country_code": "cn"
+    },
+    "武威市": {
+        "coords": [
+            102.634697,
+            37.929996
+        ],
+        "country_code": "cn"
+    },
+    "wuweishi": {
+        "coords": [
+            102.634697,
+            37.929996
+        ],
+        "country_code": "cn"
+    },
+    "张掖市": {
+        "coords": [
+            100.455472,
+            38.932897
+        ],
+        "country_code": "cn"
+    },
+    "zhangyeshi": {
+        "coords": [
+            100.455472,
+            38.932897
+        ],
+        "country_code": "cn"
+    },
+    "平凉市": {
+        "coords": [
+            106.684691,
+            35.54279
+        ],
+        "country_code": "cn"
+    },
+    "pingliangshi": {
+        "coords": [
+            106.684691,
+            35.54279
+        ],
+        "country_code": "cn"
+    },
+    "酒泉市": {
+        "coords": [
+            98.510795,
+            39.744023
+        ],
+        "country_code": "cn"
+    },
+    "jiuquanshi": {
+        "coords": [
+            98.510795,
+            39.744023
+        ],
+        "country_code": "cn"
+    },
+    "庆阳市": {
+        "coords": [
+            107.638372,
+            35.734218
+        ],
+        "country_code": "cn"
+    },
+    "qingyangshi": {
+        "coords": [
+            107.638372,
+            35.734218
+        ],
+        "country_code": "cn"
+    },
+    "定西市": {
+        "coords": [
+            104.626294,
+            35.579578
+        ],
+        "country_code": "cn"
+    },
+    "dingxishi": {
+        "coords": [
+            104.626294,
+            35.579578
+        ],
+        "country_code": "cn"
+    },
+    "陇南市": {
+        "coords": [
+            104.929379,
+            33.388598
+        ],
+        "country_code": "cn"
+    },
+    "longnanshi": {
+        "coords": [
+            104.929379,
+            33.388598
+        ],
+        "country_code": "cn"
+    },
+    "临夏回族自治州": {
+        "coords": [
+            103.212006,
+            35.599446
+        ],
+        "country_code": "cn"
+    },
+    "linxiahuizuzizhizhou": {
+        "coords": [
+            103.212006,
+            35.599446
+        ],
+        "country_code": "cn"
+    },
+    "甘南藏族自治州": {
+        "coords": [
+            102.911008,
+            34.986354
+        ],
+        "country_code": "cn"
+    },
+    "gannanzangzuzizhizhou": {
+        "coords": [
+            102.911008,
+            34.986354
+        ],
+        "country_code": "cn"
+    },
+    "西宁市": {
+        "coords": [
+            101.778916,
+            36.623178
+        ],
+        "country_code": "cn"
+    },
+    "xiningshi": {
+        "coords": [
+            101.778916,
+            36.623178
+        ],
+        "country_code": "cn"
+    },
+    "海东市": {
+        "coords": [
+            102.10327,
+            36.502916
+        ],
+        "country_code": "cn"
+    },
+    "haidongshi": {
+        "coords": [
+            102.10327,
+            36.502916
+        ],
+        "country_code": "cn"
+    },
+    "海北藏族自治州": {
+        "coords": [
+            100.901059,
+            36.959435
+        ],
+        "country_code": "cn"
+    },
+    "haibeizangzuzizhizhou": {
+        "coords": [
+            100.901059,
+            36.959435
+        ],
+        "country_code": "cn"
+    },
+    "黄南藏族自治州": {
+        "coords": [
+            102.019988,
+            35.517744
+        ],
+        "country_code": "cn"
+    },
+    "huangnanzangzuzizhizhou": {
+        "coords": [
+            102.019988,
+            35.517744
+        ],
+        "country_code": "cn"
+    },
+    "海南藏族自治州": {
+        "coords": [
+            100.619542,
+            36.280353
+        ],
+        "country_code": "cn"
+    },
+    "hainanzangzuzizhizhou": {
+        "coords": [
+            100.619542,
+            36.280353
+        ],
+        "country_code": "cn"
+    },
+    "果洛藏族自治州": {
+        "coords": [
+            100.242143,
+            34.4736
+        ],
+        "country_code": "cn"
+    },
+    "guoluozangzuzizhizhou": {
+        "coords": [
+            100.242143,
+            34.4736
+        ],
+        "country_code": "cn"
+    },
+    "玉树藏族自治州": {
+        "coords": [
+            97.008522,
+            33.004049
+        ],
+        "country_code": "cn"
+    },
+    "yushuzangzuzizhizhou": {
+        "coords": [
+            97.008522,
+            33.004049
+        ],
+        "country_code": "cn"
+    },
+    "海西蒙古族藏族自治州": {
+        "coords": [
+            97.370785,
+            37.374663
+        ],
+        "country_code": "cn"
+    },
+    "haiximengguzuzangzuzizhizhou": {
+        "coords": [
+            97.370785,
+            37.374663
+        ],
+        "country_code": "cn"
+    },
+    "银川市": {
+        "coords": [
+            106.278179,
+            38.46637
+        ],
+        "country_code": "cn"
+    },
+    "yinchuanshi": {
+        "coords": [
+            106.278179,
+            38.46637
+        ],
+        "country_code": "cn"
+    },
+    "石嘴山市": {
+        "coords": [
+            106.376173,
+            39.01333
+        ],
+        "country_code": "cn"
+    },
+    "shizuishanshi": {
+        "coords": [
+            106.376173,
+            39.01333
+        ],
+        "country_code": "cn"
+    },
+    "吴忠市": {
+        "coords": [
+            106.199409,
+            37.986165
+        ],
+        "country_code": "cn"
+    },
+    "wuzhongshi": {
+        "coords": [
+            106.199409,
+            37.986165
+        ],
+        "country_code": "cn"
+    },
+    "固原市": {
+        "coords": [
+            106.285241,
+            36.004561
+        ],
+        "country_code": "cn"
+    },
+    "guyuanshi": {
+        "coords": [
+            106.285241,
+            36.004561
+        ],
+        "country_code": "cn"
+    },
+    "中卫市": {
+        "coords": [
+            105.189568,
+            37.514951
+        ],
+        "country_code": "cn"
+    },
+    "zhongweishi": {
+        "coords": [
+            105.189568,
+            37.514951
+        ],
+        "country_code": "cn"
+    },
+    "乌鲁木齐市": {
+        "coords": [
+            87.617733,
+            43.792818
+        ],
+        "country_code": "cn"
+    },
+    "wulumuqishi": {
+        "coords": [
+            87.617733,
+            43.792818
+        ],
+        "country_code": "cn"
+    },
+    "克拉玛依市": {
+        "coords": [
+            84.873946,
+            45.595886
+        ],
+        "country_code": "cn"
+    },
+    "kelamayishi": {
+        "coords": [
+            84.873946,
+            45.595886
+        ],
+        "country_code": "cn"
+    },
+    "吐鲁番市": {
+        "coords": [
+            89.184078,
+            42.947613
+        ],
+        "country_code": "cn"
+    },
+    "tulufanshi": {
+        "coords": [
+            89.184078,
+            42.947613
+        ],
+        "country_code": "cn"
+    },
+    "哈密市": {
+        "coords": [
+            93.51316,
+            42.833248
+        ],
+        "country_code": "cn"
+    },
+    "hamishi": {
+        "coords": [
+            93.51316,
+            42.833248
+        ],
+        "country_code": "cn"
+    },
+    "昌吉回族自治州": {
+        "coords": [
+            87.304012,
+            44.014577
+        ],
+        "country_code": "cn"
+    },
+    "changjihuizuzizhizhou": {
+        "coords": [
+            87.304012,
+            44.014577
+        ],
+        "country_code": "cn"
+    },
+    "博尔塔拉蒙古自治州": {
+        "coords": [
+            82.074778,
+            44.903258
+        ],
+        "country_code": "cn"
+    },
+    "boertalamengguzizhizhou": {
+        "coords": [
+            82.074778,
+            44.903258
+        ],
+        "country_code": "cn"
+    },
+    "巴音郭楞蒙古自治州": {
+        "coords": [
+            86.150969,
+            41.768552
+        ],
+        "country_code": "cn"
+    },
+    "bayinguolengmengguzizhizhou": {
+        "coords": [
+            86.150969,
+            41.768552
+        ],
+        "country_code": "cn"
+    },
+    "阿克苏地区": {
+        "coords": [
+            80.265068,
+            41.170712
+        ],
+        "country_code": "cn"
+    },
+    "akesudiqu": {
+        "coords": [
+            80.265068,
+            41.170712
+        ],
+        "country_code": "cn"
+    },
+    "克孜勒苏柯尔克孜自治州": {
+        "coords": [
+            76.172825,
+            39.713431
+        ],
+        "country_code": "cn"
+    },
+    "kezileisukeerkezizizhizhou": {
+        "coords": [
+            76.172825,
+            39.713431
+        ],
+        "country_code": "cn"
+    },
+    "喀什地区": {
+        "coords": [
+            75.989138,
+            39.467664
+        ],
+        "country_code": "cn"
+    },
+    "kashidiqu": {
+        "coords": [
+            75.989138,
+            39.467664
+        ],
+        "country_code": "cn"
+    },
+    "和田地区": {
+        "coords": [
+            79.92533,
+            37.110687
+        ],
+        "country_code": "cn"
+    },
+    "hetiandiqu": {
+        "coords": [
+            79.92533,
+            37.110687
+        ],
+        "country_code": "cn"
+    },
+    "伊犁哈萨克自治州": {
+        "coords": [
+            81.317946,
+            43.92186
+        ],
+        "country_code": "cn"
+    },
+    "yilihasakezizhizhou": {
+        "coords": [
+            81.317946,
+            43.92186
+        ],
+        "country_code": "cn"
+    },
+    "塔城地区": {
+        "coords": [
+            82.985732,
+            46.746301
+        ],
+        "country_code": "cn"
+    },
+    "tachengdiqu": {
+        "coords": [
+            82.985732,
+            46.746301
+        ],
+        "country_code": "cn"
+    },
+    "阿勒泰地区": {
+        "coords": [
+            88.13963,
+            47.848393
+        ],
+        "country_code": "cn"
+    },
+    "aleitaidiqu": {
+        "coords": [
+            88.13963,
+            47.848393
+        ],
+        "country_code": "cn"
+    },
+    "石河子市": {
+        "coords": [
+            86.041075,
+            44.305886
+        ],
+        "country_code": "cn"
+    },
+    "shihezishi": {
+        "coords": [
+            86.041075,
+            44.305886
+        ],
+        "country_code": "cn"
+    },
+    "阿拉尔市": {
+        "coords": [
+            81.285884,
+            40.541914
+        ],
+        "country_code": "cn"
+    },
+    "alaershi": {
+        "coords": [
+            81.285884,
+            40.541914
+        ],
+        "country_code": "cn"
+    },
+    "图木舒克市": {
+        "coords": [
+            79.077978,
+            39.867316
+        ],
+        "country_code": "cn"
+    },
+    "tumushukeshi": {
+        "coords": [
+            79.077978,
+            39.867316
+        ],
+        "country_code": "cn"
+    },
+    "五家渠市": {
+        "coords": [
+            87.526884,
+            44.167401
+        ],
+        "country_code": "cn"
+    },
+    "wujiaqushi": {
+        "coords": [
+            87.526884,
+            44.167401
+        ],
+        "country_code": "cn"
+    },
+    "北屯市": {
+        "coords": [
+            87.824932,
+            47.353177
+        ],
+        "country_code": "cn"
+    },
+    "beitunshi": {
+        "coords": [
+            87.824932,
+            47.353177
+        ],
+        "country_code": "cn"
+    },
+    "铁门关市": {
+        "coords": [
+            85.501218,
+            41.827251
+        ],
+        "country_code": "cn"
+    },
+    "tiemenguanshi": {
+        "coords": [
+            85.501218,
+            41.827251
+        ],
+        "country_code": "cn"
+    },
+    "双河市": {
+        "coords": [
+            82.353656,
+            44.840524
+        ],
+        "country_code": "cn"
+    },
+    "shuangheshi": {
+        "coords": [
+            82.353656,
+            44.840524
+        ],
+        "country_code": "cn"
+    },
+    "可克达拉市": {
+        "coords": [
+            80.63579,
+            43.6832
+        ],
+        "country_code": "cn"
+    },
+    "kekedalashi": {
+        "coords": [
+            80.63579,
+            43.6832
+        ],
+        "country_code": "cn"
+    },
+    "昆玉市": {
+        "coords": [
+            79.287372,
+            37.207994
+        ],
+        "country_code": "cn"
+    },
+    "kunyushi": {
+        "coords": [
+            79.287372,
+            37.207994
+        ],
+        "country_code": "cn"
+    },
+    "胡杨河市": {
+        "coords": [
+            84.8275959,
+            44.69288853
+        ],
+        "country_code": "cn"
+    },
+    "huyangheshi": {
+        "coords": [
+            84.8275959,
+            44.69288853
+        ],
+        "country_code": "cn"
+    },
+    "台湾省": {
+        "coords": [
+            121.509062,
+            25.044332
+        ],
+        "country_code": "cn"
+    },
+    "taiwansheng": {
+        "coords": [
+            121.509062,
+            25.044332
+        ],
+        "country_code": "cn"
+    },
+    "中西区": {
+        "coords": [
+            114.1543731,
+            22.28198083
+        ],
+        "country_code": "cn"
+    },
+    "zhongxiqu": {
+        "coords": [
+            114.1543731,
+            22.28198083
+        ],
+        "country_code": "cn"
+    },
+    "湾仔区": {
+        "coords": [
+            114.1829153,
+            22.27638889
+        ],
+        "country_code": "cn"
+    },
+    "wanzaiqu": {
+        "coords": [
+            114.1829153,
+            22.27638889
+        ],
+        "country_code": "cn"
+    },
+    "东区": {
+        "coords": [
+            114.2260031,
+            22.27969306
+        ],
+        "country_code": "cn"
+    },
+    "dongqu": {
+        "coords": [
+            114.2260031,
+            22.27969306
+        ],
+        "country_code": "cn"
+    },
+    "南区": {
+        "coords": [
+            114.1600117,
+            22.24589667
+        ],
+        "country_code": "cn"
+    },
+    "nanqu": {
+        "coords": [
+            114.1600117,
+            22.24589667
+        ],
+        "country_code": "cn"
+    },
+    "油尖旺区": {
+        "coords": [
+            114.1733317,
+            22.31170389
+        ],
+        "country_code": "cn"
+    },
+    "youjianwangqu": {
+        "coords": [
+            114.1733317,
+            22.31170389
+        ],
+        "country_code": "cn"
+    },
+    "深水埗区": {
+        "coords": [
+            114.1632417,
+            22.33385417
+        ],
+        "country_code": "cn"
+    },
+    "shenshuibuqu": {
+        "coords": [
+            114.1632417,
+            22.33385417
+        ],
+        "country_code": "cn"
+    },
+    "九龙城区": {
+        "coords": [
+            114.1928467,
+            22.31251
+        ],
+        "country_code": "cn"
+    },
+    "jiulongchengqu": {
+        "coords": [
+            114.1928467,
+            22.31251
+        ],
+        "country_code": "cn"
+    },
+    "黄大仙区": {
+        "coords": [
+            114.2038856,
+            22.33632056
+        ],
+        "country_code": "cn"
+    },
+    "huangdaxianqu": {
+        "coords": [
+            114.2038856,
+            22.33632056
+        ],
+        "country_code": "cn"
+    },
+    "观塘区": {
+        "coords": [
+            114.2140542,
+            22.32083778
+        ],
+        "country_code": "cn"
+    },
+    "guantangqu": {
+        "coords": [
+            114.2140542,
+            22.32083778
+        ],
+        "country_code": "cn"
+    },
+    "荃湾区": {
+        "coords": [
+            114.1210792,
+            22.36830667
+        ],
+        "country_code": "cn"
+    },
+    "quanwanqu": {
+        "coords": [
+            114.1210792,
+            22.36830667
+        ],
+        "country_code": "cn"
+    },
+    "屯门区": {
+        "coords": [
+            113.9765742,
+            22.39384417
+        ],
+        "country_code": "cn"
+    },
+    "tunmenqu": {
+        "coords": [
+            113.9765742,
+            22.39384417
+        ],
+        "country_code": "cn"
+    },
+    "元朗区": {
+        "coords": [
+            114.0324381,
+            22.44142833
+        ],
+        "country_code": "cn"
+    },
+    "yuanlangqu": {
+        "coords": [
+            114.0324381,
+            22.44142833
+        ],
+        "country_code": "cn"
+    },
+    "北区": {
+        "coords": [
+            114.1473639,
+            22.49610389
+        ],
+        "country_code": "cn"
+    },
+    "beiqu": {
+        "coords": [
+            114.1473639,
+            22.49610389
+        ],
+        "country_code": "cn"
+    },
+    "大埔区": {
+        "coords": [
+            114.1717431,
+            22.44565306
+        ],
+        "country_code": "cn"
+    },
+    "dabuqu": {
+        "coords": [
+            114.1717431,
+            22.44565306
+        ],
+        "country_code": "cn"
+    },
+    "西贡区": {
+        "coords": [
+            114.264645,
+            22.31421306
+        ],
+        "country_code": "cn"
+    },
+    "xigongqu": {
+        "coords": [
+            114.264645,
+            22.31421306
+        ],
+        "country_code": "cn"
+    },
+    "沙田区": {
+        "coords": [
+            114.1953653,
+            22.37953167
+        ],
+        "country_code": "cn"
+    },
+    "shatianqu": {
+        "coords": [
+            114.1953653,
+            22.37953167
+        ],
+        "country_code": "cn"
+    },
+    "葵青区": {
+        "coords": [
+            114.1393194,
+            22.36387667
+        ],
+        "country_code": "cn"
+    },
+    "kuiqingqu": {
+        "coords": [
+            114.1393194,
+            22.36387667
+        ],
+        "country_code": "cn"
+    },
+    "离岛区": {
+        "coords": [
+            113.94612,
+            22.28640778
+        ],
+        "country_code": "cn"
+    },
+    "lidaoqu": {
+        "coords": [
+            113.94612,
+            22.28640778
+        ],
+        "country_code": "cn"
+    },
+    "花地玛堂区": {
+        "coords": [
+            113.5528956,
+            22.20787
+        ],
+        "country_code": "cn"
+    },
+    "huadimatangqu": {
+        "coords": [
+            113.5528956,
+            22.20787
+        ],
+        "country_code": "cn"
+    },
+    "花王堂区": {
+        "coords": [
+            113.5489608,
+            22.1992075
+        ],
+        "country_code": "cn"
+    },
+    "huawangtangqu": {
+        "coords": [
+            113.5489608,
+            22.1992075
+        ],
+        "country_code": "cn"
+    },
+    "望德堂区": {
+        "coords": [
+            113.5501828,
+            22.19372083
+        ],
+        "country_code": "cn"
+    },
+    "wangdetangqu": {
+        "coords": [
+            113.5501828,
+            22.19372083
+        ],
+        "country_code": "cn"
+    },
+    "大堂区": {
+        "coords": [
+            113.5536475,
+            22.18853944
+        ],
+        "country_code": "cn"
+    },
+    "datangqu": {
+        "coords": [
+            113.5536475,
+            22.18853944
+        ],
+        "country_code": "cn"
+    },
+    "风顺堂区": {
+        "coords": [
+            113.5419278,
+            22.18736806
+        ],
+        "country_code": "cn"
+    },
+    "fengshuntangqu": {
+        "coords": [
+            113.5419278,
+            22.18736806
+        ],
+        "country_code": "cn"
+    },
+    "嘉模堂区": {
+        "coords": [
+            113.5587044,
+            22.15375944
+        ],
+        "country_code": "cn"
+    },
+    "jiamotangqu": {
+        "coords": [
+            113.5587044,
+            22.15375944
+        ],
+        "country_code": "cn"
+    },
+    "路凼填海区": {
+        "coords": [
+            113.5695992,
+            22.13663
+        ],
+        "country_code": "cn"
+    },
+    "ludangtianhaiqu": {
+        "coords": [
+            113.5695992,
+            22.13663
+        ],
+        "country_code": "cn"
+    },
+    "圣方济各堂区": {
+        "coords": [
+            113.5599542,
+            22.12348639
+        ],
+        "country_code": "cn"
+    },
+    "shengfangjigetangqu": {
+        "coords": [
+            113.5599542,
+            22.12348639
+        ],
+        "country_code": "cn"
+    },
+    "娄星区": {
+        "coords": [
+            112.008486,
+            27.726643
+        ],
+        "country_code": "cn"
+    },
+    "louxingqu": {
+        "coords": [
+            112.008486,
+            27.726643
+        ],
+        "country_code": "cn"
+    },
+    "双峰县": {
+        "coords": [
+            112.198245,
+            27.459126
+        ],
+        "country_code": "cn"
+    },
+    "shuangfengxian": {
+        "coords": [
+            112.198245,
+            27.459126
+        ],
+        "country_code": "cn"
+    },
+    "新化县": {
+        "coords": [
+            111.306747,
+            27.737456
+        ],
+        "country_code": "cn"
+    },
+    "xinhuaxian": {
+        "coords": [
+            111.306747,
+            27.737456
+        ],
+        "country_code": "cn"
+    },
+    "冷水江市": {
+        "coords": [
+            111.434674,
+            27.685759
+        ],
+        "country_code": "cn"
+    },
+    "lengshuijiangshi": {
+        "coords": [
+            111.434674,
+            27.685759
+        ],
+        "country_code": "cn"
+    },
+    "涟源市": {
+        "coords": [
+            111.670847,
+            27.692301
+        ],
+        "country_code": "cn"
+    },
+    "lianyuanshi": {
+        "coords": [
+            111.670847,
+            27.692301
+        ],
+        "country_code": "cn"
+    },
+	"北京": {"coords": [116.405285, 39.904989], "country_code": "cn"},
+    "beijing": {"coords": [116.405285, 39.904989], "country_code": "cn"},
+    "天津": {"coords": [117.190182, 39.125596], "country_code": "cn"},
+    "tianjin": {"coords": [117.190182, 39.125596], "country_code": "cn"},
+    "上海": {"coords": [121.472644, 31.231706], "country_code": "cn"},
+    "shanghai": {"coords": [121.472644, 31.231706], "country_code": "cn"},
+    "重庆": {"coords": [106.504962, 29.533155], "country_code": "cn"},
+    "chongqing": {"coords": [106.504962, 29.533155], "country_code": "cn"},
+    "东京": {"coords": [139.6917, 35.6895], "country_code": "jp"},
+    "tokyo": {"coords": [139.6917, 35.6895], "country_code": "jp"},
+    "大阪": {"coords": [135.5023, 34.6937], "country_code": "jp"},
+    "osaka": {"coords": [135.5023, 34.6937], "country_code": "jp"},
+    "京都": {"coords": [135.7680, 35.0116], "country_code": "jp"},
+    "kyoto": {"coords": [135.7680, 35.0116], "country_code": "jp"},
+    "名古屋": {"coords": [136.9066, 35.1815], "country_code": "jp"},
+    "nagoya": {"coords": [136.9066, 35.1815], "country_code": "jp"},
+    "横滨": {"coords": [139.6380, 35.4437], "country_code": "jp"},
+    "yokohama": {"coords": [139.6380, 35.4437], "country_code": "jp"},
+    "首尔": {"coords": [126.9780, 37.5665], "country_code": "kr"},
+    "seoul": {"coords": [126.9780, 37.5665], "country_code": "kr"},
+    "釜山": {"coords": [129.0756, 35.1796], "country_code": "kr"},
+    "busan": {"coords": [129.0756, 35.1796], "country_code": "kr"},
+    "新加坡": {"coords": [103.8198, 1.3521], "country_code": "sg"},
+    "singapore": {"coords": [103.8198, 1.3521], "country_code": "sg"},
+    "曼谷": {"coords": [100.5018, 13.7563], "country_code": "th"},
+    "bangkok": {"coords": [100.5018, 13.7563], "country_code": "th"},
+    "吉隆坡": {"coords": [101.6869, 3.1390], "country_code": "my"},
+    "kualalumpur": {"coords": [101.6869, 3.1390], "country_code": "my"},
+    "雅加达": {"coords": [106.8456, -6.2088], "country_code": "id"},
+    "jakarta": {"coords": [106.8456, -6.2088], "country_code": "id"},
+    
+    "新德里": {"coords": [77.2090, 28.6139], "country_code": "in"},
+    "newdelhi": {"coords": [77.2090, 28.6139], "country_code": "in"},
+    "孟买": {"coords": [72.8777, 19.0760], "country_code": "in"},
+    "mumbai": {"coords": [72.8777, 19.0760], "country_code": "in"},
+    
+    "迪拜": {"coords": [55.2708, 25.2048], "country_code": "ae"},
+    "dubai": {"coords": [55.2708, 25.2048], "country_code": "ae"},
+    
+    "巴黎": {"coords": [2.3522, 48.8566], "country_code": "fr"},
+    "paris": {"coords": [2.3522, 48.8566], "country_code": "fr"},
+    "马赛": {"coords": [5.3698, 43.2965], "country_code": "fr"},
+    "marseille": {"coords": [5.3698, 43.2965], "country_code": "fr"},
+    "里昂": {"coords": [4.8357, 45.7640], "country_code": "fr"},
+    "lyon": {"coords": [4.8357, 45.7640], "country_code": "fr"},
+    
+    "伦敦": {"coords": [-0.1278, 51.5074], "country_code": "gb"},
+    "london": {"coords": [-0.1278, 51.5074], "country_code": "gb"},
+    "曼彻斯特": {"coords": [-2.2426, 53.4808], "country_code": "gb"},
+    "manchester": {"coords": [-2.2426, 53.4808], "country_code": "gb"},
+    "爱丁堡": {"coords": [-3.1883, 55.9533], "country_code": "gb"},
+    "edinburgh": {"coords": [-3.1883, 55.9533], "country_code": "gb"},
+    
+    "柏林": {"coords": [13.4050, 52.5200], "country_code": "de"},
+    "berlin": {"coords": [13.4050, 52.5200], "country_code": "de"},
+    "慕尼黑": {"coords": [11.5820, 48.1351], "country_code": "de"},
+    "munich": {"coords": [11.5820, 48.1351], "country_code": "de"},
+    "法兰克福": {"coords": [8.6821, 50.1109], "country_code": "de"},
+    "frankfurt": {"coords": [8.6821, 50.1109], "country_code": "de"},
+    "汉堡": {"coords": [9.9937, 53.5511], "country_code": "de"},
+    "hamburg": {"coords": [9.9937, 53.5511], "country_code": "de"},
+    
+    "罗马": {"coords": [12.4964, 41.9028], "country_code": "it"},
+    "rome": {"coords": [12.4964, 41.9028], "country_code": "it"},
+    "米兰": {"coords": [9.1900, 45.4642], "country_code": "it"},
+    "milan": {"coords": [9.1900, 45.4642], "country_code": "it"},
+    "佛罗伦萨": {"coords": [11.2558, 43.7696], "country_code": "it"},
+    "florence": {"coords": [11.2558, 43.7696], "country_code": "it"},
+    "威尼斯": {"coords": [12.3155, 45.4408], "country_code": "it"},
+    "venice": {"coords": [12.3155, 45.4408], "country_code": "it"},
+    
+    "莫斯科": {"coords": [37.6173, 55.7558], "country_code": "ru"},
+    "moscow": {"coords": [37.6173, 55.7558], "country_code": "ru"},
+    "圣彼得堡": {"coords": [30.3351, 59.9343], "country_code": "ru"},
+    "saintpetersburg": {"coords": [30.3351, 59.9343], "country_code": "ru"},
+    
+    "马德里": {"coords": [-3.7038, 40.4168], "country_code": "es"},
+    "madrid": {"coords": [-3.7038, 40.4168], "country_code": "es"},
+    "巴塞罗那": {"coords": [2.1734, 41.3851], "country_code": "es"},
+    "barcelona": {"coords": [2.1734, 41.3851], "country_code": "es"},
+    
+    "阿姆斯特丹": {"coords": [4.9041, 52.3676], "country_code": "nl"},
+    "amsterdam": {"coords": [4.9041, 52.3676], "country_code": "nl"},
+    
+    "布鲁塞尔": {"coords": [4.3517, 50.8503], "country_code": "be"},
+    "brussels": {"coords": [4.3517, 50.8503], "country_code": "be"},
+    
+    "维也纳": {"coords": [16.3738, 48.2082], "country_code": "at"},
+    "vienna": {"coords": [16.3738, 48.2082], "country_code": "at"},
+    
+    "苏黎世": {"coords": [8.5417, 47.3769], "country_code": "ch"},
+    "zurich": {"coords": [8.5417, 47.3769], "country_code": "ch"},
+    "日内瓦": {"coords": [6.1432, 46.2044], "country_code": "ch"},
+    "geneva": {"coords": [6.1432, 46.2044], "country_code": "ch"},
+    
+    "雅典": {"coords": [23.7275, 37.9838], "country_code": "gr"},
+    "athens": {"coords": [23.7275, 37.9838], "country_code": "gr"},
+    
+    "伊斯坦布尔": {"coords": [28.9784, 41.0082], "country_code": "tr"},
+    "istanbul": {"coords": [28.9784, 41.0082], "country_code": "tr"},
+    
+    "纽约": {"coords": [-74.0060, 40.7128], "country_code": "us"},
+    "newyork": {"coords": [-74.0060, 40.7128], "country_code": "us"},
+    "洛杉矶": {"coords": [-118.2437, 34.0522], "country_code": "us"},
+    "losangeles": {"coords": [-118.2437, 34.0522], "country_code": "us"},
+    "芝加哥": {"coords": [-87.6298, 41.8781], "country_code": "us"},
+    "chicago": {"coords": [-87.6298, 41.8781], "country_code": "us"},
+    "旧金山": {"coords": [-122.4194, 37.7749], "country_code": "us"},
+    "sanfrancisco": {"coords": [-122.4194, 37.7749], "country_code": "us"},
+    "华盛顿": {"coords": [-77.0369, 38.9072], "country_code": "us"},
+    "washington": {"coords": [-77.0369, 38.9072], "country_code": "us"},
+    "波士顿": {"coords": [-71.0589, 42.3601], "country_code": "us"},
+    "boston": {"coords": [-71.0589, 42.3601], "country_code": "us"},
+    "西雅图": {"coords": [-122.3321, 47.6062], "country_code": "us"},
+    "seattle": {"coords": [-122.3321, 47.6062], "country_code": "us"},
+    "迈阿密": {"coords": [-80.1918, 25.7617], "country_code": "us"},
+    "miami": {"coords": [-80.1918, 25.7617], "country_code": "us"},
+    "拉斯维加斯": {"coords": [-115.1398, 36.1699], "country_code": "us"},
+    "lasvegas": {"coords": [-115.1398, 36.1699], "country_code": "us"},
+    
+    "多伦多": {"coords": [-79.3832, 43.6532], "country_code": "ca"},
+    "toronto": {"coords": [-79.3832, 43.6532], "country_code": "ca"},
+    "温哥华": {"coords": [-123.1207, 49.2827], "country_code": "ca"},
+    "vancouver": {"coords": [-123.1207, 49.2827], "country_code": "ca"},
+    "蒙特利尔": {"coords": [-73.5673, 45.5017], "country_code": "ca"},
+    "montreal": {"coords": [-73.5673, 45.5017], "country_code": "ca"},
+    
+    "墨西哥城": {"coords": [-99.1332, 19.4326], "country_code": "mx"},
+    "mexicocity": {"coords": [-99.1332, 19.4326], "country_code": "mx"},
+    
+    "悉尼": {"coords": [151.2093, -33.8688], "country_code": "au"},
+    "sydney": {"coords": [151.2093, -33.8688], "country_code": "au"},
+    "墨尔本": {"coords": [144.9631, -37.8136], "country_code": "au"},
+    "melbourne": {"coords": [144.9631, -37.8136], "country_code": "au"},
+    
+    "奥克兰": {"coords": [174.7633, -36.8485], "country_code": "nz"},
+    "auckland": {"coords": [174.7633, -36.8485], "country_code": "nz"},
+    
+    "里约热内卢": {"coords": [-43.1729, -22.9068], "country_code": "br"},
+    "riodejaneiro": {"coords": [-43.1729, -22.9068], "country_code": "br"},
+    "圣保罗": {"coords": [-46.6333, -23.5505], "country_code": "br"},
+    "saopaulo": {"coords": [-46.6333, -23.5505], "country_code": "br"},
+    
+    "布宜诺斯艾利斯": {"coords": [-58.3816, -34.6037], "country_code": "ar"},
+    "buenosaires": {"coords": [-58.3816, -34.6037], "country_code": "ar"},
+    
+    "开罗": {"coords": [31.2357, 30.0444], "country_code": "eg"},
+    "cairo": {"coords": [31.2357, 30.0444], "country_code": "eg"},
+    
+    "开普敦": {"coords": [18.4241, -33.9249], "country_code": "za"},
+    "capetown": {"coords": [18.4241, -33.9249], "country_code": "za"}
+}

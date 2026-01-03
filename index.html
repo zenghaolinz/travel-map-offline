@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Map AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.104/Build/Cesium/Cesium.js"></script>
+    <link href="https://cesium.com/downloads/cesiumjs/releases/1.104/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <style>
+        body { font-family: "Microsoft YaHei", sans-serif; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-thumb { background: #555; border-radius: 3px; }
+        .cesium-viewer-bottom, .cesium-viewer-animationContainer, .cesium-viewer-timelineContainer, .cesium-viewer-toolbar { display: none !important; }
+        body.recording .ui-layer { display: none !important; }
+        #directorControls, #countdownOverlay, #recordingStatus, #loadingOverlay, #manualEditor { display: none; }
+        body.director-mode #directorControls { display: flex !important; }
+        body.counting-down #countdownOverlay { display: flex !important; }
+        body.recording #recordingStatus { display: flex !important; }
+        body.loading #loadingOverlay { display: flex !important; }
+        body.manual-mode #manualEditor { display: flex !important; }
+    </style>
+</head>
+<body class="bg-[#1a1a1a] text-white w-screen h-screen overflow-hidden relative">
+
+    <div id="cesiumContainer" class="absolute inset-0 w-full h-full z-0"></div>
+    
+    <div id="loadingOverlay" class="absolute inset-0 z-[60] bg-black/80 flex flex-col items-center justify-center pointer-events-none backdrop-blur-sm">
+        <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mb-4"></div>
+        <h2 class="text-2xl font-bold" id="loadingText" data-i18n="loading_title">处理中...</h2>
+        <p class="text-gray-400 mt-2" id="loadingSubText" data-i18n="loading_sub">请稍候...</p>
+    </div>
+
+    <div id="manualEditor" class="absolute inset-0 z-[50] bg-black/60 backdrop-blur-md flex items-center justify-center">
+        <div class="bg-[#252525] w-full max-w-lg rounded-2xl border border-white/10 shadow-2xl flex flex-col max-h-[80vh]">
+            <div class="p-4 border-b border-white/10 flex justify-between items-center">
+                <h2 class="font-bold text-lg flex items-center gap-2"><i data-lucide="map-pin"></i> <span data-i18n="manual_title">手动路线规划</span></h2>
+                <button id="closeManualBtn" class="text-gray-400 hover:text-white"><i data-lucide="x"></i></button>
+            </div>
+            <div id="stopsContainer" class="p-4 overflow-y-auto flex-1 space-y-3"></div>
+            <div class="p-4 border-t border-white/10 flex justify-between items-center bg-[#1a1a1a] rounded-b-2xl">
+                <button id="addStopBtn" class="text-blue-400 hover:text-blue-300 text-sm font-medium flex items-center gap-1">
+                    <i data-lucide="plus-circle" width="16"></i> <span data-i18n="add_stop">添加站点</span>
+                </button>
+                <button id="submitManualBtn" class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-2 rounded-lg font-bold shadow-lg transition" data-i18n="generate_btn">生成路线</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="directorControls" class="absolute inset-0 z-[60] bg-black/40 flex flex-col items-center justify-center pointer-events-auto backdrop-blur-sm">
+        <div class="bg-[#1a1a1a] p-6 rounded-3xl border border-white/20 shadow-2xl flex flex-col items-center text-center max-w-md w-full">
+            <h2 class="text-2xl font-bold mb-4" data-i18n="director_title">导演模式就绪</h2>
+
+            <div class="w-full mb-4 text-left space-y-4">
+                <div>
+                    <label class="text-xs text-gray-400 uppercase font-bold mb-1 block">运动速率 (Speed)</label>
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs">0.5x</span>
+                        <input type="range" id="speedRange" min="0.5" max="3.0" step="0.5" value="1.0" class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-blue-500">
+                        <span class="text-xs" id="speedValue">1.0x</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between bg-white/5 p-2 rounded-lg border border-white/10">
+                    <label class="text-xs text-gray-300 font-bold flex items-center gap-2">
+                        <i data-lucide="flip-horizontal" width="14"></i>
+                        车辆方向不对？点这里反转
+                    </label>
+                    <input type="checkbox" id="forceFlipCheck" class="w-5 h-5 rounded border-gray-600 text-blue-600 focus:ring-blue-500">
+                </div>
+            </div>
+
+            <div class="w-full grid grid-cols-3 gap-2 mb-6 mt-4">
+                <div>
+                    <label class="text-[10px] text-gray-400 block mb-1">✈️ Plane Icon</label>
+                    <select id="planeIconSelect" class="w-full bg-[#333] text-xs p-1 rounded border border-white/10 outline-none"><option value="">Default</option></select>
+                </div>
+                <div>
+                    <label class="text-[10px] text-gray-400 block mb-1">🚄 Train Icon</label>
+                    <select id="trainIconSelect" class="w-full bg-[#333] text-xs p-1 rounded border border-white/10 outline-none"><option value="">Default</option></select>
+                </div>
+                <div>
+                    <label class="text-[10px] text-gray-400 block mb-1">🚗 Car Icon</label>
+                    <select id="carIconSelect" class="w-full bg-[#333] text-xs p-1 rounded border border-white/10 outline-none"><option value="">Default</option></select>
+                </div>
+            </div>
+
+            <div class="text-left bg-black/30 p-3 rounded-xl text-xs text-gray-400 mb-6 w-full space-y-1">
+                <p>✅ <span data-i18n="route_label">路线</span>: <span id="routeInfo" class="text-white">...</span></p>
+                <p>✅ <span data-i18n="dist_label">总里程</span>: <span id="totalDistDisplay" class="text-green-400 font-bold">0 km</span></p>
+            </div>
+
+            <button id="actionBtn" class="w-full bg-red-600 hover:bg-red-500 text-white font-black text-xl px-10 py-3 rounded-full shadow-[0_0_30px_rgba(220,38,38,0.6)] transition transform hover:scale-105 flex items-center justify-center gap-3">
+                <div class="w-4 h-4 bg-white rounded-full animate-pulse"></div> ACTION!
+            </button>
+            <button id="cancelBtn" class="mt-4 text-gray-500 hover:text-white text-sm underline" data-i18n="cancel_btn">取消</button>
+        </div>
+    </div>
+
+    <div id="countdownOverlay" class="absolute inset-0 z-[70] flex items-center justify-center pointer-events-none">
+        <div id="countdownText" class="text-[150px] font-black text-white drop-shadow-[0_0_20px_rgba(0,0,0,0.8)] animate-pulse">3</div>
+    </div>
+    <div id="recordingStatus" class="absolute top-8 left-1/2 -translate-x-1/2 z-50 flex-col items-center gap-2 pointer-events-none bg-black/60 backdrop-blur-md px-6 py-3 rounded-2xl border border-white/10">
+        <div class="flex items-center gap-2 text-red-500 font-bold animate-pulse">
+            <div class="w-3 h-3 bg-red-500 rounded-full"></div><span data-i18n="rec_status">录制中</span>
+        </div>
+        <div class="w-64 h-1.5 bg-white/20 rounded-full overflow-hidden mt-1">
+            <div id="progressBar" class="h-full bg-red-500 w-0 transition-all duration-100 ease-linear"></div>
+        </div>
+    </div>
+
+    <div class="ui-layer">
+        <div class="absolute top-6 left-6 z-10 w-72 md:w-80 flex flex-col gap-4 pointer-events-none">
+            <div class="pointer-events-auto flex items-center gap-3">
+                <span class="text-gray-500 text-sm">1</span>
+                <div class="bg-white/10 hover:bg-white/20 transition px-3 py-1.5 rounded-full backdrop-blur-md border border-white/5 flex items-center gap-2 cursor-pointer">
+                    <span class="font-semibold text-sm" data-i18n="current_trip">当前行程</span>
+                </div>
+            </div>
+            <div class="pointer-events-auto relative group">
+                <div class="absolute left-0 top-1/2 -translate-y-1/2 text-gray-400 p-2"><i data-lucide="plus" width="18"></i></div>
+                <div class="flex items-center bg-black/60 backdrop-blur-xl border border-white/10 rounded-2xl p-1 pl-8 shadow-lg">
+                    <i data-lucide="search" width="16" class="text-gray-400 ml-2"></i>
+                    <input id="topSearchInput" type="text" data-i18n-placeholder="search_placeholder" placeholder="搜索地点或坐标" class="bg-transparent border-none outline-none text-sm text-white px-3 py-2 w-full placeholder-gray-500 focus:ring-0"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute top-6 right-6 z-10 flex items-center gap-3 pointer-events-auto">
+            <button id="langSwitchBtn" class="bg-white/10 hover:bg-white/20 text-white text-sm font-bold px-3 py-2.5 rounded-full transition border border-white/20" onclick="toggleLanguage()">中 / EN</button>
+            <button id="openManualBtn" class="bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-bold px-4 py-2.5 rounded-full shadow-lg transition flex items-center gap-2 border border-white/20">
+                <i data-lucide="map-pin" width="16"></i> <span data-i18n="btn_manual">手动规划</span>
+            </button>
+            <button id="exportBtn" class="bg-blue-600 hover:bg-blue-500 text-white text-sm font-bold px-4 py-2.5 rounded-full shadow-lg transition flex items-center gap-2 border border-white/20">
+                <i data-lucide="clapperboard" width="16"></i> <span data-i18n="btn_director">导演模式</span>
+            </button>
+            <button class="bg-white/10 hover:bg-white/20 text-white p-2.5 rounded-full transition border border-white/10" onclick="resetView()" title="Reset View">
+                <i data-lucide="globe" width="18"></i>
+            </button>
+        </div>
+
+        <div class="absolute bottom-6 left-6 right-6 z-20 flex justify-between items-end pointer-events-none">
+            <div class="pointer-events-auto w-full max-w-md bg-[#252525]/90 backdrop-blur-xl border border-white/10 rounded-2xl p-2 flex items-center shadow-2xl gap-2">
+                <button id="uploadBtn" class="p-2 text-gray-400 hover:text-white transition" title="Upload Image">
+                    <i data-lucide="image" width="20"></i>
+                </button>
+                <input id="tripInput" type="text" data-i18n-placeholder="ai_input_placeholder" placeholder="输入行程，AI 自动规划" class="bg-transparent border-none outline-none text-sm text-white px-2 w-full h-10 placeholder-gray-500 focus:ring-0"/>
+                <button id="sendBtn" class="bg-white/10 hover:bg-white/20 text-white p-2 rounded-xl transition">
+                    <i data-lucide="sparkles" width="18" class="text-yellow-400"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <input type="file" id="hiddenFileInput" accept="image/*" style="display: none;" />
+    <script> lucide.createIcons(); </script>
+
+    <script>
+        const translations = {
+            zh: { loading_title: "处理中...", loading_sub: "请稍候...", manual_title: "手动路线规划", add_stop: "添加站点", generate_btn: "生成路线", director_title: "导演模式就绪", route_label: "路线", cancel_btn: "取消", rec_status: "录制中", current_trip: "当前行程", search_placeholder: "搜索地点或坐标", btn_manual: "手动规划", btn_director: "导演模式", ai_input_placeholder: "输入行程，AI 自动规划 (例如: 北京去上海)", ai_thinking: "AI 正在思考...", ocr_scanning: "正在识别图片...", moving_start: "正在前往起点...", stops_count: "个站点", error_title: "错误", start_point: "起点", end_point: "终点", waypoint: "途经点", plane: "✈️ 飞机", train: "🚄 火车", car: "🚗 汽车", alert_generate_first: "请先生成路线！", alert_input_stops: "请输入至少起点和终点。", alert_ocr_fail: "图片识别失败", alert_ai_fail: "AI 请求超时或错误", dist_label: "总里程", vehicle_label: "交通工具" },
+            en: { loading_title: "Processing...", loading_sub: "Please wait...", manual_title: "Manual Route Builder", add_stop: "Add Stop", generate_btn: "Generate Route", director_title: "Director Mode Ready", route_label: "Route", cancel_btn: "Cancel", rec_status: "REC", current_trip: "Current Trip", search_placeholder: "Search name or coords", btn_manual: "Manual Builder", btn_director: "Director Mode", ai_input_placeholder: "AI Auto Plan (e.g. London to Paris)", ai_thinking: "AI is thinking...", ocr_scanning: "OCR Scanning...", moving_start: "Moving to Start...", stops_count: "Stops", error_title: "Error", start_point: "Start Point", end_point: "Destination", waypoint: "Waypoint", plane: "✈️ Plane", train: "🚄 Train", car: "🚗 Car", alert_generate_first: "Please generate a route first!", alert_input_stops: "Please enter at least a Start and End point.", alert_ocr_fail: "OCR Failed", alert_ai_fail: "AI Request Failed", dist_label: "Total Dist", vehicle_label: "Transport" }
+        };
+        let currentLang = 'zh';
+        function toggleLanguage() { currentLang = currentLang === 'zh' ? 'en' : 'zh'; updatePageLanguage(); }
+        function updatePageLanguage() { const t = translations[currentLang]; document.querySelectorAll('[data-i18n]').forEach(el => { if (t[el.getAttribute('data-i18n')]) el.innerText = t[el.getAttribute('data-i18n')]; }); document.querySelectorAll('[data-i18n-placeholder]').forEach(el => { if (t[el.getAttribute('data-i18n-placeholder')]) el.placeholder = t[el.getAttribute('data-i18n-placeholder')]; }); if (document.body.classList.contains('manual-mode')) renderManualStops(); }
+        function getT(key) { return translations[currentLang][key] || key; }
+
+        let currentRouteData = null;
+        let mediaRecorder;
+        let recordedChunks = [];
+        let isAnimating = false;
+        let sampledPosition = null;
+
+        let timelineEvents = [];
+
+        let waypoints = [];
+        let transportModes = [];
+        let vehicleEntity = null;
+        let totalDistance = 0;
+        let manualStops = [ { id: 1, name: "", mode: "flight" }, { id: 2, name: "", mode: "flight" } ];
+        let animationSpeed = 1.0;
+        let imageCache = {};
+
+        let forceFlip = false;
+
+
+
+        const viewer = new Cesium.Viewer('cesiumContainer', {
+            animation: false,
+            timeline: false,
+            geocoder: false,
+            homeButton: false,
+            sceneModePicker: false,
+            baseLayerPicker: false,
+            navigationHelpButton: false,
+            infoBox: false,
+            selectionIndicator: false,
+            creditContainer: document.createElement('div'),
+
+            imageryProvider: new Cesium.UrlTemplateImageryProvider({
+                url: "https://webst02.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}",
+                maximumLevel: 18
+            }),
+
+            useDefaultRenderLoop: true,
+            shouldAnimate: true,
+            contextOptions: { webgl: { preserveDrawingBuffer: true } }
+        });
+
+        viewer.scene.globe.enableLighting = true;
+        viewer.clock.currentTime = Cesium.JulianDate.fromIso8601("2023-06-21T04:00:00Z");
+        viewer.scene.fog.enabled = true;
+        viewer.scene.skyAtmosphere.show = true;
+        viewer.scene.globe.maximumScreenSpaceError = 1.2;
+
+        window.resetView = function() { if (isAnimating) return; viewer.camera.flyTo({ destination: Cesium.Cartesian3.fromDegrees(120, 24, 15000000) }); }
+
+        async function fetchAssets() {
+            try {
+                const res = await fetch('http://localhost:8000/api/assets-list');
+                const data = await res.json();
+                const selects = ['planeIconSelect', 'trainIconSelect', 'carIconSelect'];
+                selects.forEach(id => {
+                    const sel = document.getElementById(id);
+                    sel.innerHTML = '<option value="">Default (Emoji)</option>';
+                    data.images.forEach(img => {
+                        const opt = document.createElement('option');
+                        opt.value = `http://localhost:8000/assets/${img}`;
+                        opt.innerText = img;
+                        sel.appendChild(opt);
+                    });
+                });
+            } catch(e) { console.log("Assets fetch failed", e); }
+        }
+        fetchAssets();
+
+        const speedRange = document.getElementById('speedRange');
+        const speedValue = document.getElementById('speedValue');
+        speedRange.addEventListener('input', (e) => { animationSpeed = parseFloat(e.target.value); speedValue.innerText = animationSpeed + 'x'; });
+
+        document.getElementById('forceFlipCheck').addEventListener('change', (e) => {
+            forceFlip = e.target.checked;
+        });
+
+        const openManualBtn = document.getElementById('openManualBtn');
+        const closeManualBtn = document.getElementById('closeManualBtn');
+        const stopsContainer = document.getElementById('stopsContainer');
+        const addStopBtn = document.getElementById('addStopBtn');
+        const submitManualBtn = document.getElementById('submitManualBtn');
+
+        openManualBtn.addEventListener('click', () => { document.body.classList.add('manual-mode'); renderManualStops(); });
+        closeManualBtn.addEventListener('click', () => { document.body.classList.remove('manual-mode'); });
+        addStopBtn.addEventListener('click', () => { manualStops.push({ id: manualStops.length > 0 ? Math.max(...manualStops.map(s => s.id)) + 1 : 1, name: "", mode: "flight" }); renderManualStops(); });
+
+        function renderManualStops() {
+            stopsContainer.innerHTML = "";
+            manualStops.forEach((stop, index) => {
+                const isFirst = index === 0; const isLast = index === manualStops.length - 1;
+                let phText = isFirst ? getT('start_point') : (isLast ? getT('end_point') : getT('waypoint'));
+                const row = document.createElement('div');
+                row.className = "flex items-center gap-2 bg-black/20 p-2 rounded-lg border border-white/5";
+                row.innerHTML = `<div class="text-gray-500 text-xs font-mono w-4">${index + 1}</div><input type="text" value="${stop.name}" placeholder="${phText}" class="bg-transparent border-b border-white/20 text-sm text-white w-full outline-none focus:border-blue-500 py-1" onchange="updateStop(${stop.id}, 'name', this.value)"/><select class="bg-[#333] text-xs text-white border-none rounded px-1 py-1 outline-none" onchange="updateStop(${stop.id}, 'mode', this.value)"><option value="flight" ${stop.mode === 'flight' ? 'selected' : ''}>${getT('plane')}</option><option value="train" ${stop.mode === 'train' ? 'selected' : ''}>${getT('train')}</option><option value="car" ${stop.mode === 'car' ? 'selected' : ''}>${getT('car')}</option></select>${manualStops.length > 2 ? `<button onclick="removeStop(${stop.id})" class="text-red-400 hover:text-red-300 p-1"><i data-lucide="trash-2" width="14"></i></button>` : ''}`;
+                stopsContainer.appendChild(row);
+            });
+            lucide.createIcons();
+        }
+        window.updateStop = function(id, field, value) { const stop = manualStops.find(s => s.id === id); if (stop) stop[field] = value; }
+        window.removeStop = function(id) { if (manualStops.length <= 2) return; manualStops = manualStops.filter(s => s.id !== id); renderManualStops(); }
+
+        submitManualBtn.addEventListener('click', async () => {
+            const validStops = manualStops.filter(s => s.name.trim() !== "");
+            if (validStops.length < 2) { alert(getT('alert_input_stops')); return; }
+            document.body.classList.remove('manual-mode'); showLoading(getT('loading_title'), getT('loading_sub'));
+            try {
+                const payload = { stops: validStops.map(s => ({ name: s.name, transport_mode: s.mode })) };
+                const res = await fetch('http://localhost:8000/api/manual-route', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
+                const data = await res.json(); renderRouteOnMap(data);
+            } catch (err) { alert(getT('error_title')); } finally { hideLoading(); }
+        });
+
+        function showLoading(title, sub) { document.body.classList.add('loading'); document.getElementById('loadingText').innerText = title; document.getElementById('loadingSubText').innerText = sub; }
+        function hideLoading() { document.body.classList.remove('loading'); }
+        const tripInput = document.getElementById('tripInput');
+        async function handleTripSubmit() {
+            const query = tripInput.value.trim(); if (!query) return;
+            tripInput.value = ""; tripInput.blur(); tripInput.disabled = true; showLoading(getT('loading_title'), getT('ai_thinking'));
+            try { const res = await fetch('http://localhost:8000/api/generate-route', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ query }) }); const data = await res.json(); renderRouteOnMap(data); } catch (err) { alert(getT('alert_ai_fail')); } finally { hideLoading(); tripInput.disabled = false; tripInput.placeholder = getT('ai_input_placeholder'); tripInput.focus(); }
+        }
+        tripInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') handleTripSubmit(); });
+        document.getElementById('sendBtn').addEventListener('click', handleTripSubmit);
+        const hiddenFile = document.getElementById('hiddenFileInput');
+        document.getElementById('uploadBtn').addEventListener('click', () => hiddenFile.click());
+        hiddenFile.addEventListener('change', async (e) => {
+            const file = e.target.files[0]; if (!file) return;
+            tripInput.value = `[${file.name}]`; tripInput.disabled = true; showLoading(getT('loading_title'), getT('ocr_scanning'));
+            try { const formData = new FormData(); formData.append('file', file); const res = await fetch('http://localhost:8000/api/upload-image', { method: 'POST', body: formData }); const data = await res.json(); renderRouteOnMap(data); } catch (err) { alert(getT('alert_ocr_fail')); } finally { hideLoading(); tripInput.disabled = false; tripInput.value = ""; tripInput.placeholder = getT('ai_input_placeholder'); hiddenFile.value = ''; }
+        });
+
+        function renderRouteOnMap(data) {
+            currentRouteData = data;
+            viewer.entities.removeAll();
+            if (!data.route || data.route.length === 0) return;
+
+            data.route.forEach(loc => {
+                const [lon, lat] = loc.coordinates;
+                // 国旗
+                if (loc.country_code) {
+                    viewer.entities.add({
+                        position: Cesium.Cartesian3.fromDegrees(lon, lat),
+                        billboard: {
+                            image: `http://localhost:8000/assets/flags/${loc.country_code}.svg`,
+                            width: 28, height: 21,
+                            horizontalOrigin: Cesium.HorizontalOrigin.RIGHT,
+                            pixelOffset: new Cesium.Cartesian2(-8, -20),
+                            disableDepthTestDistance: Number.POSITIVE_INFINITY
+                        }
+                    });
+                }
+                viewer.entities.add({
+                    position: Cesium.Cartesian3.fromDegrees(lon, lat),
+                    point: { pixelSize: 10, color: Cesium.Color.DODGERBLUE, outlineColor: Cesium.Color.WHITE, outlineWidth: 2 },
+                    label: {
+                        text: loc.name, font: 'bold 18px "Microsoft YaHei"', fillColor: Cesium.Color.WHITE, style: Cesium.LabelStyle.FILL_AND_OUTLINE, outlineWidth: 3, outlineColor: Cesium.Color.BLACK,
+                        horizontalOrigin: Cesium.HorizontalOrigin.LEFT, verticalOrigin: Cesium.VerticalOrigin.BOTTOM, pixelOffset: new Cesium.Cartesian2(5, -20),
+                        disableDepthTestDistance: Number.POSITIVE_INFINITY, showBackground: true, backgroundColor: new Cesium.Color(0, 0, 0, 0.6), backgroundPadding: new Cesium.Cartesian2(6, 4)
+                    }
+                });
+            });
+
+            const first = data.route[0];
+            viewer.camera.flyTo({ destination: Cesium.Cartesian3.fromDegrees(first.coordinates[0], first.coordinates[1], 10000000), duration: 1.5 });
+        }
+
+        const topInput = document.getElementById('topSearchInput');
+        topInput.addEventListener('keydown', async (e) => {
+            if (e.key === 'Enter') {
+                const query = topInput.value.trim(); if (!query) return; topInput.disabled = true; topInput.placeholder = getT('loading_title');
+                try {
+                    const res = await fetch(`http://localhost:8000/api/search?q=${encodeURIComponent(query)}`); const data = await res.json(); const [lon, lat] = data.coordinates;
+                    if(lon !== 0) {
+                        viewer.entities.removeAll();
+                        if (data.country_code) {
+                            viewer.entities.add({ position: Cesium.Cartesian3.fromDegrees(lon, lat), billboard: { image: `http://localhost:8000/assets/flags/${data.country_code}.svg`, width: 32, height: 24, horizontalOrigin: Cesium.HorizontalOrigin.RIGHT, pixelOffset: new Cesium.Cartesian2(-10, -20), disableDepthTestDistance: Number.POSITIVE_INFINITY } });
+                        }
+                        viewer.entities.add({ position: Cesium.Cartesian3.fromDegrees(lon, lat), point: { pixelSize: 15, color: Cesium.Color.RED, outlineColor: Cesium.Color.WHITE, outlineWidth: 2 }, label: { text: data.name, font: '18px "Microsoft YaHei"', style: Cesium.LabelStyle.FILL_AND_OUTLINE, fillColor: Cesium.Color.WHITE, outlineWidth: 2, horizontalOrigin: Cesium.HorizontalOrigin.LEFT, verticalOrigin: Cesium.VerticalOrigin.BOTTOM, pixelOffset: new Cesium.Cartesian2(10, -20), showBackground: true, backgroundColor: new Cesium.Color(0,0,0,0.6) } });
+                        viewer.camera.flyTo({ destination: Cesium.Cartesian3.fromDegrees(lon, lat, 50000), duration: 2.0 });
+                    }
+                } catch(e){}
+                topInput.disabled = false; topInput.value = ""; topInput.placeholder = getT('search_placeholder');
+            }
+        });
+
+        document.getElementById('exportBtn').addEventListener('click', () => {
+			if (!currentRouteData || currentRouteData.route.length < 2) { alert(getT('alert_generate_first')); return; }
+			const locations = currentRouteData.route;
+			document.getElementById('routeInfo').innerText = `${locations.length} ${getT('stops_count')}`;
+			showLoading(getT('moving_start'), getT('loading_sub'));
+			const first = locations[0];
+            const START_HEIGHT = 1800000; 
+            viewer.camera.flyTo({
+                destination: Cesium.Cartesian3.fromDegrees(first.coordinates[0], first.coordinates[1], START_HEIGHT),
+                orientation: { heading: 0, pitch: Cesium.Math.toRadians(-90), roll: 0 },
+                duration: 2.0,
+                complete: () => {
+                    hideLoading(); viewer.clock.shouldAnimate = false;
+                    document.body.classList.add('director-mode');
+                    prepareSegmentedAnimation(locations);
+                }
+            });
+        });
+
+        function prepareSegmentedAnimation(locations) {
+            waypoints = locations;
+            const start = Cesium.JulianDate.fromDate(new Date());
+            const STOP_DURATION_BASE = 2.0;
+
+            let totalDistKm = 0;
+            timelineEvents = []; // 清空事件列表
+            sampledPosition = new Cesium.SampledPositionProperty();
+
+            // 预先计算路段距离
+            let segments = [];
+            for (let i = 0; i < locations.length - 1; i++) {
+                const p1 = Cesium.Cartesian3.fromDegrees(locations[i].coordinates[0], locations[i].coordinates[1]);
+                const p2 = Cesium.Cartesian3.fromDegrees(locations[i+1].coordinates[0], locations[i+1].coordinates[1]);
+                const dist = Cesium.Cartesian3.distance(p1, p2) / 1000;
+                segments.push(dist);
+                totalDistKm += dist;
+            }
+            totalDistance = Math.round(totalDistKm);
+            document.getElementById('totalDistDisplay').innerText = `${totalDistance} km`;
+
+            // 构建时间轴
+            sampledPosition.addSample(start, Cesium.Cartesian3.fromDegrees(locations[0].coordinates[0], locations[0].coordinates[1]));
+            let currentTimeOffset = 0;
+            let cumulativeDist = 0;
+
+            for (let i = 0; i < segments.length; i++) {
+                const dist = segments[i];
+                const mode = locations[i].transport_mode || 'flight';
+
+                // 计算该段耗时
+                let duration;
+                if (dist < 200) duration = 8; else if (dist < 1000) duration = 12; else if (dist < 5000) duration = 18; else duration = 25;
+                duration = duration / animationSpeed;
+
+                // 1. 移动事件 (Move)
+                const startTime = Cesium.JulianDate.addSeconds(start, currentTimeOffset, new Cesium.JulianDate());
+                currentTimeOffset += duration;
+                const endTime = Cesium.JulianDate.addSeconds(start, currentTimeOffset, new Cesium.JulianDate());
+
+                // 记录移动事件
+                timelineEvents.push({
+                    type: 'move',
+                    start: startTime,
+                    stop: endTime,
+                    segmentIndex: i,
+                    mode: mode,
+                    distStart: cumulativeDist, // 该段起始里程
+                    distLength: Math.round(dist) // 该段总长
+                });
+
+                // 更新位置采样
+                const endPos = Cesium.Cartesian3.fromDegrees(locations[i+1].coordinates[0], locations[i+1].coordinates[1]);
+                sampledPosition.addSample(endTime, endPos);
+
+                cumulativeDist += Math.round(dist);
+
+                if (i < segments.length - 1) {
+                    const stopDuration = STOP_DURATION_BASE / animationSpeed;
+                    const stopStartTime = endTime; // 接着刚才的结束时间
+                    currentTimeOffset += stopDuration;
+                    const stopEndTime = Cesium.JulianDate.addSeconds(start, currentTimeOffset, new Cesium.JulianDate());
+
+                    timelineEvents.push({
+                        type: 'stop',
+                        start: stopStartTime,
+                        stop: stopEndTime,
+                        segmentIndex: i, // 停顿归属于刚走完的这段
+                        fixedDist: cumulativeDist // 停顿时里程锁死
+                    });
+
+                    // 位置保持不变
+                    sampledPosition.addSample(stopEndTime, endPos);
+                }
+            }
+
+            const finalStop = Cesium.JulianDate.addSeconds(start, currentTimeOffset, new Cesium.JulianDate());
+            viewer.clock.startTime = start.clone();
+            viewer.clock.stopTime = finalStop.clone();
+            viewer.clock.currentTime = start.clone();
+            viewer.clock.clockRange = Cesium.ClockRange.CLAMPED;
+            viewer.clock.multiplier = 1;
+
+            // 绘制全线
+            viewer.entities.add({
+                polyline: {
+                    positions: new Cesium.CallbackProperty((time) => {
+                        let activePositions = [];
+                        const currentPos = sampledPosition.getValue(time);
+                        if (!currentPos) return [];
+
+                        // 找到当前事件
+                        const currentEvent = getCurrentEvent(time);
+                        if (!currentEvent) return [];
+
+                        // 把之前所有路段的点都加进去
+                        let limitIndex = currentEvent.segmentIndex;
+                        if (currentEvent.type === 'stop') limitIndex++; // 如果在停顿，说明这段已经走完了，要把下一个点也连上
+
+                        for(let i=0; i<=limitIndex; i++) {
+                             activePositions.push(Cesium.Cartesian3.fromDegrees(locations[i].coordinates[0], locations[i].coordinates[1]));
+                        }
+
+                        // 如果是移动中，当前点也要连上
+                        if (currentEvent.type === 'move') {
+                            activePositions.push(currentPos);
+                        } else {
+                            // 如果是停顿，确保连到站点
+                            activePositions.push(Cesium.Cartesian3.fromDegrees(locations[limitIndex].coordinates[0], locations[limitIndex].coordinates[1]));
+                        }
+
+                        return activePositions;
+                    }, false),
+                    width: 5,
+                    material: new Cesium.PolylineGlowMaterialProperty({ glowPower: 0.2, color: Cesium.Color.fromCssColorString('#00f2ff') }),
+                    arcType: Cesium.ArcType.GEODESIC
+                }
+            });
+
+            // 载具实体
+            vehicleEntity = viewer.entities.add({
+                position: sampledPosition,
+                show: new Cesium.CallbackProperty((time) => {
+                    const evt = getCurrentEvent(time);
+                    return evt && evt.type === 'move';
+                }, false),
+                billboard: {
+                    image: new Cesium.CallbackProperty((time) => {
+                        const evt = getCurrentEvent(time);
+                        if (!evt || evt.type !== 'move') return ""; // 停顿不返回图片
+
+                        let mode = evt.mode;
+                        let heading = 0;
+                        const t1 = time;
+                        const t2 = Cesium.JulianDate.addSeconds(time, 0.1, new Cesium.JulianDate());
+                        const p1 = sampledPosition.getValue(t1);
+                        const p2 = sampledPosition.getValue(t2);
+                        if (p1 && p2) {
+                            const c1 = Cesium.Cartographic.fromCartesian(p1);
+                            const c2 = Cesium.Cartographic.fromCartesian(p2);
+                            const geodesic = new Cesium.EllipsoidGeodesic(c1, c2);
+                            heading = Cesium.Math.toDegrees(geodesic.startHeading);
+                        }
+                        return getIconDataUri(mode, heading);
+                    }, false),
+                    scale: 1.2,
+                    horizontalOrigin: Cesium.HorizontalOrigin.CENTER,
+                    verticalOrigin: Cesium.VerticalOrigin.CENTER,
+                    disableDepthTestDistance: Number.POSITIVE_INFINITY,
+                    rotation: new Cesium.CallbackProperty((time) => {
+                         const evt = getCurrentEvent(time);
+                         if (!evt || evt.type !== 'move') return 0;
+                         if (evt.mode === 'flight') {
+                            const t1 = time;
+                            const t2 = Cesium.JulianDate.addSeconds(time, 0.1, new Cesium.JulianDate());
+                            const p1 = sampledPosition.getValue(t1);
+                            const p2 = sampledPosition.getValue(t2);
+                            if (p1 && p2) {
+                                const c1 = Cesium.Cartographic.fromCartesian(p1);
+                                const c2 = Cesium.Cartographic.fromCartesian(p2);
+                                const geodesic = new Cesium.EllipsoidGeodesic(c1, c2);
+                                return -geodesic.startHeading;
+                            }
+                         }
+                         return 0;
+                    }, false)
+                },
+                label: {
+                    text: new Cesium.CallbackProperty((time) => {
+                        const evt = getCurrentEvent(time);
+                        let distToShow = 0;
+                        if (evt) {
+                            if (evt.type === 'stop') {
+                                distToShow = evt.fixedDist;
+                            } else {
+                                const totalSec = Cesium.JulianDate.secondsDifference(evt.stop, evt.start);
+                                const curSec = Cesium.JulianDate.secondsDifference(time, evt.start);
+                                let p = curSec / totalSec; if(p<0) p=0; if(p>1) p=1;
+                                distToShow = evt.distStart + Math.round(evt.distLength * p);
+                            }
+                        }
+
+                        const totalTime = Cesium.JulianDate.secondsDifference(viewer.clock.stopTime, viewer.clock.startTime);
+                        const curTime = Cesium.JulianDate.secondsDifference(time, viewer.clock.startTime);
+                        let totalP = curTime / totalTime; if(totalP>1) totalP=1;
+                        document.getElementById('progressBar').style.width = `${totalP * 100}%`;
+
+                        return `+${distToShow} km`;
+                    }, false),
+                    font: 'bold 16px "Microsoft YaHei"', fillColor: Cesium.Color.YELLOW, showBackground: true, backgroundColor: new Cesium.Color(0,0,0,0.7), backgroundPadding: new Cesium.Cartesian2(8, 4), pixelOffset: new Cesium.Cartesian2(0, -50), disableDepthTestDistance: Number.POSITIVE_INFINITY, horizontalOrigin: Cesium.HorizontalOrigin.CENTER
+                }
+            });
+        }
+
+        function getCurrentEvent(time) {
+            for(let i=0; i<timelineEvents.length; i++) {
+                const e = timelineEvents[i];
+                if (Cesium.JulianDate.compare(time, e.start) >= 0 && Cesium.JulianDate.compare(time, e.stop) <= 0) {
+                    return e;
+                }
+            }
+            return timelineEvents[timelineEvents.length-1]; // Fallback
+        }
+
+        function getIconDataUri(mode, headingDeg) {
+            let src = null; let emoji = '✈️';
+            if (mode === 'car') { src = document.getElementById('carIconSelect').value; emoji = '🚗'; }
+            else if (mode === 'train') { src = document.getElementById('trainIconSelect').value; emoji = '🚄'; }
+            else { src = document.getElementById('planeIconSelect').value; emoji = '✈️'; }
+
+            const isMovingLeft = (headingDeg > 180 && headingDeg < 360);
+            let needsMirror = false; let rotationOffset = 0;
+
+            if (mode === 'flight') { needsMirror = false; rotationOffset = -45; }
+            else {
+                if (src && src !== "") { if (isMovingLeft) needsMirror = true; else needsMirror = false; }
+                else { if (isMovingLeft) needsMirror = false; else needsMirror = true; }
+                if (forceFlip) needsMirror = !needsMirror;
+            }
+
+            const canvas = document.createElement('canvas'); canvas.width = 64; canvas.height = 64;
+            const ctx = canvas.getContext('2d'); ctx.translate(32, 32);
+            if (needsMirror) ctx.scale(-1, 1);
+            if (rotationOffset !== 0) ctx.rotate(rotationOffset * Math.PI / 180);
+
+            if (src && src !== "") {
+                if (!imageCache[src]) {
+                    const img = new Image(); img.crossOrigin = "Anonymous"; img.src = src + "?t=" + new Date().getTime();
+                    img.onload = () => { imageCache[src] = img; };
+                    ctx.font = '48px serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+                    let yOffset = (mode === 'train' || mode === 'car') ? -4 : 0; ctx.fillText(emoji, 0, yOffset);
+                } else { ctx.drawImage(imageCache[src], -32, -32, 64, 64); }
+            } else {
+                ctx.font = '48px serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+                let yOffset = (mode === 'train' || mode === 'car') ? -4 : 0; ctx.fillText(emoji, 0, yOffset);
+            }
+            return canvas.toDataURL();
+        }
+
+        document.getElementById('actionBtn').addEventListener('click', () => { document.body.classList.remove('director-mode'); startCountdown(); });
+        document.getElementById('cancelBtn').addEventListener('click', () => { document.body.classList.remove('director-mode'); cleanupAnimation(); resetView(); });
+
+        function startCountdown() { document.body.classList.add('counting-down'); let count = 3; document.getElementById('countdownText').innerText = count; startRecording(); const timer = setInterval(() => { count--; if (count > 0) document.getElementById('countdownText').innerText = count; else { clearInterval(timer); document.body.classList.remove('counting-down'); startAnimation(); } }, 1000); }
+        function startAnimation() { isAnimating = true; document.getElementById('progressBar').style.width = '0%'; viewer.clock.onTick.addEventListener(updateCameraAndProgress); viewer.clock.shouldAnimate = true; const stopListener = viewer.clock.onStop.addEventListener(() => { if (isAnimating) { setTimeout(() => { stopRecording(); cleanupAnimation(); stopListener(); }, 1000); } }); }
+
+        // =========================================================
+        //  只需要替换这一个完整的函数 (包含速度控制 + 高度控制)
+        // =========================================================
+        function updateCameraAndProgress(clock) {
+            if (!isAnimating) return;
+            const time = clock.currentTime;
+            
+            // 1. 获取当前事件 (用于判断是在移动还是停顿)
+            const evt = getCurrentEvent(time);
+            if (!evt) return;
+
+            // 2. 速度控制 (解决弹射起步)
+            if (evt.type === 'stop') {
+                viewer.clock.multiplier = animationSpeed * 2.0; // 停顿期间速度恒定
+            } else {
+                // 计算 *局部进度* (本段路走了多少)
+                const segTotal = Cesium.JulianDate.secondsDifference(evt.stop, evt.start);
+                const segCur = Cesium.JulianDate.secondsDifference(time, evt.start);
+                let p = segCur / segTotal; if(p<0) p=0; if(p>1) p=1;
+                
+                // 正弦波作用于 *局部进度*，保证每段都是 慢->快->慢
+                const speedCurve = 1.5 + 3.0 * Math.sin(p * Math.PI);
+                viewer.clock.multiplier = animationSpeed * speedCurve;
+            }
+
+            // 更新 UI 进度条
+            const totalTime = Cesium.JulianDate.secondsDifference(viewer.clock.stopTime, viewer.clock.startTime);
+            const curTime = Cesium.JulianDate.secondsDifference(time, viewer.clock.startTime);
+            let totalP = curTime / totalTime; if(totalP>1) totalP=1;
+            document.getElementById('progressBar').style.width = `${totalP * 100}%`;
+
+            const currentPos = sampledPosition.getValue(time);
+            if (currentPos) {
+                const carto = Cesium.Cartographic.fromCartesian(currentPos);
+                
+                // ====================================================
+                //  3. 高度控制 (这里改了高度，解决高德不显示问题)
+                // ====================================================
+                
+                // 基础高度：从 100km 改为 800km (800000米)
+                // 这样能保证看到大范围的高德卫星图
+                const minAlt = 1800000; 
+                let currentAlt = minAlt; 
+                
+                if (evt.type === 'move') {
+                    const segTotal = Cesium.JulianDate.secondsDifference(evt.stop, evt.start);
+                    const segCur = Cesium.JulianDate.secondsDifference(time, evt.start);
+                    let p = segCur / segTotal;
+                    
+                    // 计算该段总长
+                    const p1 = waypoints[evt.segmentIndex]; 
+                    const p2 = waypoints[evt.segmentIndex+1];
+                    const distKm = Cesium.Cartesian3.distance(
+                        Cesium.Cartesian3.fromDegrees(p1.coordinates[0], p1.coordinates[1]), 
+                        Cesium.Cartesian3.fromDegrees(p2.coordinates[0], p2.coordinates[1])
+                    ) / 1000;
+                    
+                    // 飞行最高点：基础高度 + 200km，或者距离的一半，取最大值
+                    const maxAlt = Math.max(minAlt + 200000, distKm * 500); 
+                    const peakAlt = Math.min(maxAlt, 8000000); // 上限 8000km
+                    
+                    // 正弦波计算高度
+                    currentAlt = minAlt + (peakAlt - minAlt) * Math.sin(p * Math.PI);
+                }
+
+                viewer.camera.setView({ 
+                    destination: Cesium.Cartesian3.fromRadians(carto.longitude, carto.latitude, currentAlt), 
+                    orientation: { heading: 0, pitch: Cesium.Math.toRadians(-90), roll: 0 } 
+                });
+            }
+        }
+
+        function cleanupAnimation() { document.body.classList.remove('recording'); isAnimating = false; viewer.clock.onTick.removeEventListener(updateCameraAndProgress); if (vehicleEntity) viewer.entities.remove(vehicleEntity); }
+        function startRecording() { try { const canvas = viewer.canvas; const mimeTypes = ['video/webm; codecs=vp9', 'video/webm', 'video/mp4']; let selectedType = mimeTypes.find(type => MediaRecorder.isTypeSupported(type)); const stream = canvas.captureStream(30); mediaRecorder = new MediaRecorder(stream, { mimeType: selectedType, videoBitsPerSecond: 8000000 }); recordedChunks = []; mediaRecorder.ondataavailable = (e) => { if (e.data.size > 0) recordedChunks.push(e.data); }; mediaRecorder.onstop = saveRecording; mediaRecorder.start(); document.body.classList.add('recording'); } catch (e) { alert("Rec Error: " + e.message); } }
+        function stopRecording() { if (mediaRecorder && mediaRecorder.state !== 'inactive') mediaRecorder.stop(); }
+        function saveRecording() { const blob = new Blob(recordedChunks, { type: 'video/webm' }); const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = `travel_director_${new Date().getTime()}.webm`; document.body.appendChild(a); a.click(); setTimeout(() => { document.body.removeChild(a); window.URL.revokeObjectURL(url); }, 100); }
+    </script>
+</body>
+</html>
