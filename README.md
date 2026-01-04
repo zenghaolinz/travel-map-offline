@@ -128,7 +128,11 @@ uvicorn main:app --reload
 * **OCR 无法识别**: 请检查 Tesseract 路径在 `services.py` 中是否配置正确，且图片清晰度足够。
 * **地图不显示**: 前端依赖 Cesium 的 CDN，请确保您的网络可以访问 `cesium.com` 和 `unpkg.com`。
 
+## 鸣谢与参考 (Acknowledgments)
+本项目使用了以下优秀的开源项目：
+- [flag-icons](https://github.com/lipis/flag-icons) - 提供了精美的 SVG 国旗图标库 (MIT License)。
 ---
 
 *Created by NLin*
+
 
